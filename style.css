@@ -1,0 +1,120 @@
+/* @font-face {
+  font-family: healB;
+  src: url("fonts/healthewebb-regular-webfont.woff"),
+    url("fonts/healthewebb-regular-webfont.woff2");
+} */
+@font-face {
+  font-family: healB;
+  src: url("fonts/HealTheWebB-Regular.otf");
+}
+@font-face {
+  font-family: linea;
+  src: url("fonts/Linea.otf");
+}
+@font-face {
+  font-family: basker1;
+  src: url("fonts/BBBBaskervvol-Base.woff"),
+    url("fonts/BBBBaskervvol-Base.woff2");
+}
+@font-face {
+  font-family: basker2;
+  src: url("fonts/BBBBaskervvol-Fondue.woff"),
+    url("fonts/BBBBaskervvol-Fondue.woff2");
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0px;
+  background: rgba(255, 0, 0, 0.108)
+    url("https://d2w9rnfcy7mm78.cloudfront.net/23809734/original_f52ea80f3e11c0f9afdfb5b8385961b0.png?1695612211?bc=0")
+    repeat scroll -18px -10px;
+}
+.main {
+  position: absolute;
+  left: 10vw;
+  top: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.container-left {
+  width: max-content;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container-right {
+  width: max-content;
+}
+.header {
+  width: max-content;
+  height: max-content;
+  border: 3px dotted blue;
+  background-color: white;
+  box-shadow: 5px 5px 100px 20px rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+  /* margin: 1rem; */
+}
+.header-right {
+  width: max-content;
+  height: max-content;
+  /* border: 3px dotted #dbd6ff; */
+  background-color: #e9e9ffd6;
+  box-shadow: 5px 5px 100px 20px rgba(255, 255, 255, 0.5);
+  padding: 0.8rem 1rem 0.5rem 3rem;
+}
+.guild-update {
+  font-size: 5rem;
+  font-family: linea;
+  width: 45vw;
+  color: #0900ff;
+  text-shadow: 0px 20px 35px rgb(0 39 255 / 55%);
+  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-color: #ff3737;
+  transition: all 1.5s ease-in-out;
+}
+#title {
+  font-family: healB;
+  color: black;
+  font-size: 4rem;
+}
+.change {
+  font-feature-settings: none;
+  text-shadow: 2px -3px 6px rgba(0, 0, 255, 0.55),
+    2px -30px 18px rgba(0, 0, 255, 0.26),
+    1px -14px 17px rgba(255, 254, 252, 0.18);
+}
+.pages {
+  width: 100%;
+  height: max-content;
+  border: 3px dotted blue;
+  background-color: white;
+  box-shadow: 5px 5px 100px 20px rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+}
+.pages.second {
+  font-family: basker1;
+}
+.pagelinks {
+  font-family: basker2;
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 1rem;
+}
+.pagelinks.active {
+  color: blue;
+}
+.contactlinks {
+  font-family: basker1;
+  color: blue;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  padding: 1rem;
+}
