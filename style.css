@@ -159,6 +159,8 @@ input {
   color: black;
   font-family: basker1;
   font-size: 2rem;
+  padding-left: 1.5rem;
+  color: #676767;
 }
 #mce-EMAIL {
   border: none;
@@ -212,6 +214,8 @@ input {
   body {
     /* background-color: lightblue; */
     width: 100vw;
+    margin: 0px;
+    padding: 1rem;
   }
   .main {
     flex-direction: column;
