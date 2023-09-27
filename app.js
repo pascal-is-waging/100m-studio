@@ -1,6 +1,7 @@
 let states = ["ss01", "aalt", "ss02", "ss03", "ss04", "none"];
 const header = $(".header");
-// addEventListener("mousemove", (event) => {});
+
+//changing typeface animation for the design guild
 header.mousemove(function () {
   if (Math.random() > 0.8) {
     const temp = document.querySelectorAll(".change");
