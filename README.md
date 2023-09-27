@@ -8,3 +8,5 @@ ODG is an in-house student-run design studio,facilitating co-operation within ou
 - [ ] Add typefaces and colophone
 - [ ] Write guidelines
 - [ ] Update newsletter
+- [ ] Fix resize for the main box
+- [ ] Fix margins and paddings
