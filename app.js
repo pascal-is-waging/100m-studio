@@ -1,6 +1,8 @@
 let states = ["ss01", "aalt", "ss02", "ss03", "ss04", "none"];
 const header = $(".header");
-
+// const divleft = $(".container-left");
+// divleft.css("width", `${header.width() + header.width() / 5}px`);
+// // console.log(`${}`);
 //changing typeface animation for the design guild
 header.mousemove(function () {
   if (Math.random() > 0.8) {
@@ -29,4 +31,7 @@ function checkCase(letter) {
   } else {
     return false;
   }
+}
+function fixdivsize() {
+  const divleft = $(".container-left");
 }
