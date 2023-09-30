@@ -169,6 +169,13 @@ body {
 .pagelinks.active {
   color: var(--accent-color);
 }
+.change {
+  font-feature-settings: none;
+  text-shadow: 2px -3px 6px rgba(0, 0, 255, 0.55),
+    2px -30px 18px rgba(0, 0, 255, 0.26),
+    1px -14px 17px rgba(255, 254, 252, 0.18);
+}
+
 /* .pagelinks.change {
   font-size: 2rem;
   font-family: healB;
