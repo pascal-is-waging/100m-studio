@@ -7,6 +7,6 @@ ODG is an in-house student-run design studio,facilitating co-operation within ou
 - [x] Add typefaces and colophon
 - [x] Fix resize for the main box
 - [x] Fix margins and paddings
-- [ ] Add google sheet background editor
+- [x] Add google sheet background editor
 - [ ] Update newsletter
 - [ ] Rss feed?

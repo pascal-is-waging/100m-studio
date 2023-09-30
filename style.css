@@ -206,14 +206,16 @@ body {
   /* margin-left: 1rem; */
 }
 #refreshBTN {
+  border: 1px white dotted;
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   left: 2vw;
   top: 5vh;
   padding: 0.5rem;
+  margin-top: 1rem;
   background: #0000ffc4;
   border: none;
-  box-shadow: 2px 2px 20px rgb(134 147 243 / 49%);
+  /* box-shadow: 2px 2px 20px rgb(134 147 243 / 49%); */
   color: white;
   /* text-decoration: line-through; */
   font-size: 3rem;
