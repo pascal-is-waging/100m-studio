@@ -2,8 +2,9 @@ let states = ["ss01", "aalt", "ss02", "ss03", "ss04", "none"];
 const header = $(".header");
 // const divleft = $(".container-left");
 // divleft.css("width", `${header.width() + header.width() / 5}px`);
-// // console.log(`${}`);
+
 //changing typeface animation for the design guild
+// change the css tag randomly based on the states array:
 header.mousemove(function () {
   if (Math.random() > 0.8) {
     const temp = document.querySelectorAll(".change");
@@ -24,6 +25,7 @@ header.mousemove(function () {
   }
 });
 // $(".header").draggable();
+// check if the letter is uppercase or not
 function checkCase(letter) {
   let le = letter.toUpperCase();
   if (letter == le) {
@@ -32,6 +34,7 @@ function checkCase(letter) {
     return false;
   }
 }
-function fixdivsize() {
-  const divleft = $(".container-left");
-}
+
+// function fixdivsize() {
+//   const divleft = $(".container-left");
+// }
