@@ -1,9 +1,7 @@
 let states = ["ss01", "aalt", "ss02", "ss03", "ss04", "none"];
 const header = $(".header");
-// const divleft = $(".container-left");
-// divleft.css("width", `${header.width() + header.width() / 5}px`);
 
-//changing typeface animation for the design guild
+// changing typeface animation for the design guild
 // change the css tag randomly based on the states array:
 header.mousemove(function () {
   if (Math.random() > 0.8) {
@@ -24,7 +22,6 @@ header.mousemove(function () {
   } else {
   }
 });
-// $(".header").draggable();
 // check if the letter is uppercase or not
 function checkCase(letter) {
   let le = letter.toUpperCase();
@@ -35,6 +32,9 @@ function checkCase(letter) {
   }
 }
 
+// $(".header").draggable();
 // function fixdivsize() {
 //   const divleft = $(".container-left");
 // }
+// const divleft = $(".container-left");
+// divleft.css("width", `${header.width() + header.width() / 5}px`);
