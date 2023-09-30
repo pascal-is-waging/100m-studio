@@ -10,3 +10,4 @@ ODG is an in-house student-run design studio,facilitating co-operation within ou
 - [x] Add google sheet background editor
 - [ ] Update newsletter
 - [ ] Rss feed?
+- [ ] Land Acknowledgement
