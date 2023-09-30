@@ -1,4 +1,4 @@
-# [OCAD Design Guild}]("https://designguild.studio")
+# [OCAD Design Guild](https://designguild.studio)
 
 ODG is an in-house student-run design studio,facilitating co-operation within our campus.
 
