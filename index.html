@@ -22,6 +22,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/alvinashiatey/Sheets@latest/dist/sheets.umd.min.js"></script>
     <title>OCAD Design Guild</title>
   </head>
   <body>
@@ -37,24 +38,40 @@
             ><span class="change">l</span><span class="change">d</span>
           </p>
         </div>
-        <div class="pages">
-          <a href="" class="pagelinks active">The GUILD</a>
-          <a href="about.html" class="pagelinks">About</a>
-          <a href="colophon.html" class="pagelinks">Colophon</a>
-        </div>
-        <div class="pages second">
-          <a href="mailto:ocaddesignguild@gmail.com" class="contactlinks"
-            >email</a
-          >
-          <a href="https://www.are.na/ocad-design-guild" class="contactlinks"
-            >are.na</a
-          >
-          <a
-            href="https://www.are.na/ocad-design-guild"
-            id="change-ground"
-            class="contactlinks"
-            >change background</a
-          >
+        <div class="pagemain">
+          <div class="pages">
+            <a href="" class="pagelinks active">The GUILD</a>
+            <a href="about.html" class="pagelinks">About</a>
+            <a href="colophon.html" class="pagelinks">Colophon</a>
+          </div>
+          <div class="pages second">
+            <a href="mailto:ocaddesignguild@gmail.com" class="contactlinks"
+              >email</a
+            >
+            <a href="https://www.are.na/ocad-design-guild" class="contactlinks"
+              >are.na</a
+            >
+            <a
+              href="https://docs.google.com/spreadsheets/d/1t5KQxRLhwsDz6YugontnYx1FkmKMXRsIm7Ty4Zba6UU/edit?usp=sharing"
+              id="change-ground"
+              class="contactlinks"
+              >add your background</a
+            >
+          </div>
+          <button type="button" onClick="reloadThePage()" id="refreshBTN">
+            <p id="inthere">↻</p>
+          </button>
+          <!-- <div class="pages third">
+            <p class="block-content-left">
+              You can change the background in this<a
+                href="https://docs.google.com/spreadsheets/d/1t5KQxRLhwsDz6YugontnYx1FkmKMXRsIm7Ty4Zba6UU/edit?usp=sharing"
+                class="contactlinks bang"
+                >Google Sheet</a
+              >
+              <br />
+              make sure to refresh afterwards:
+            </p>
+          </div> -->
         </div>
       </div>
       <div class="container-right">
