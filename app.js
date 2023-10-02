@@ -69,10 +69,10 @@ function givemethatlink(r) {
 // }
 
 //this thing is why I hate JS
-checkthing();
+// checkthing();
 
-function checkthing() {
-  const divleft = $(".container-left");
-  divleft.css("width", `${header.width() + 30}px `);
-  window.requestAnimationFrame(checkthing);
-}
+// function checkthing() {
+//   const divleft = $(".container-left");
+//   divleft.css("width", `${header.width() + 30}px `);
+//   window.requestAnimationFrame(checkthing);
+// }
