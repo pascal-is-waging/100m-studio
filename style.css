@@ -233,6 +233,9 @@ body {
 .block-content {
   font-family: basker1;
   color: black;
+  font-size: 2rem;
+}
+.block-content.top {
   font-size: 2.5rem;
 }
 .block-content-left {
@@ -245,7 +248,7 @@ body {
 .block-content-link {
   font-family: basker1;
   color: var(--accent-color);
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-decoration: none;
 }
 .signup {

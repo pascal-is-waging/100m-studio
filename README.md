@@ -11,3 +11,4 @@ ODG is an in-house student-run design studio,facilitating co-operation within ou
 - [ ] Update newsletter
 - [ ] Rss feed?
 - [ ] Land Acknowledgement
+- [ ] Things that inspired the guild
