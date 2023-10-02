@@ -240,10 +240,11 @@ body {
 .block-content {
   font-family: basker1;
   color: black;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-right: 2rem;
 }
 .block-content.top {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
 }
 .block-content-left {
   width: 80%;
@@ -255,7 +256,7 @@ body {
 .block-content-link {
   font-family: basker1;
   color: var(--accent-color);
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-decoration: none;
 }
 .signup {
