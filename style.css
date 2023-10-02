@@ -124,6 +124,13 @@ body {
   -webkit-text-stroke-width: 0px;
   /* -webkit-text-stroke-color: #30ffc3; */
 }
+.guild-info.link {
+  font-size: 2rem;
+  -webkit-text-stroke-width: 0px;
+  color: #0027ff99;
+  text-transform: lowercase;
+  text-decoration: none;
+}
 #title {
   /* text-align: center; */
   font-family: healB;
@@ -318,6 +325,14 @@ input {
   transform: translateX(8%) scale(1.1);
   text-decoration: none;
 }
+.guild-info.link:hover {
+  color: #ffffff;
+  text-shadow: 0px 0px 10px var(--accent-color);
+  text-decoration: underline;
+  transform: translateX(8%) scale(1.1);
+  /* text-decoration: none; */
+}
+
 .block-content-link:hover {
   color: #ffffff;
   text-shadow: 0px 0px 10px var(--accent-color);
@@ -338,6 +353,12 @@ input {
 }
 .header:hover {
   cursor: vertical-text;
+  text-decoration: none;
+}
+.guild-info:hover {
+  color: #ffffff;
+  text-shadow: 0px 0px 20px var(--accent-color);
+  /* text-decoration: underline; */
   text-decoration: none;
 }
 .guild-info.about:hover {
