@@ -12,5 +12,5 @@ ODG is an in-house student-run design studio,facilitating co-operation within ou
 - [ ] Rss feed?
 - [x] Land Acknowledgement
 - [x] Things that inspired the guild
-- [ ] Change the sheet submit shit
-- [ ] Change name and all that shit
+- [ ] Change the sheet submission to a form
+- [ ] Change name and all?
