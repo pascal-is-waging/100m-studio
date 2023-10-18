@@ -36,6 +36,7 @@ function checkCase(letter) {
     return false;
   }
 }
+//function for reload btn
 function reloadThePage() {
   window.location.reload(true);
 }
@@ -56,7 +57,7 @@ async function doWork(s) {
 //check to ignore empty cells
 function givemethatlink(r) {
   for (let i = 0; i < r.length; i++) {
-    if (r[i + 1].Images == "") {
+    if (r[i + 1].Images == "" || r[i + 1].Images == undefined) {
       return r[i].Images;
     }
   }

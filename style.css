@@ -23,7 +23,7 @@
 }
 :root {
   --main-color: #00ffb366;
-  --right-color: #9affe1d6;
+  --right-color: #9affe1fa;
 
   --accent-color: blue;
 }
@@ -69,8 +69,8 @@ body {
   gap: 1rem;
 }
 .header {
-  width: max-content;
-  /* width: 100%; */
+  /* width: max-content; */
+  width: 100%;
   height: max-content;
   border: 3px dotted var(--accent-color);
   background-color: white;
@@ -110,7 +110,7 @@ body {
   font-family: basker1;
   color: var(--accent-color);
   /* text-shadow: 0px 20px 35px rgb(0 39 255 / 55%); */
-  -webkit-text-stroke-width: 0.9px;
+  -webkit-text-stroke-width: 0.7px;
   -webkit-text-stroke-color: #30ffc3;
 
   transition: all 0.5s ease-in-out;
@@ -135,7 +135,7 @@ body {
   /* text-align: center; */
   font-family: healB;
   color: black;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 .pagemain {
   display: flex;
@@ -331,7 +331,6 @@ input {
   text-shadow: 0px 0px 10px var(--accent-color);
   text-decoration: underline;
   transform: translateX(8%) scale(1.1);
-  /* text-decoration: none; */
 }
 
 .block-content-link:hover {
@@ -356,12 +355,11 @@ input {
   cursor: vertical-text;
   text-decoration: none;
 }
-.guild-info:hover {
+/* .guild-info:hover {
   color: #ffffff;
   text-shadow: 0px 0px 20px var(--accent-color);
-  /* text-decoration: underline; */
   text-decoration: none;
-}
+} */
 .guild-info.about:hover {
   color: #ffffff;
   text-shadow: 0px 0px 10px var(--accent-color);
