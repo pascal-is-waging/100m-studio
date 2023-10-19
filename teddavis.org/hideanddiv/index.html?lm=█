@@ -1,0 +1,670 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+	
+<!-- ▁ ▂ ▃ ▄ ▅ ted davis 2012  // teddavis.org  ▅ ▄ ▃ ▂ ▁-->
+	
+
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>hide + div // ted davis 2012</title>
+		<script type="text/javascript"  language="javascript" src="jquery-1.7.1.min.js"></script>
+		
+		<style type="text/css" media="all">
+		body{
+			margin:0px;
+			overflow:hidden;
+			background:#000;background-color:#000;		}
+		.randomdiv{
+			background-color:#000;
+			cursor:help;
+			background:#000;background-color:#000;			
+		}
+		
+		.randomdiv:hover{
+			background:#fff;background-color:#fff;		}
+		 .randomdiv_stuck { background:#fff;background-color:#fff; }
+		
+			#top_nav{
+				position:absolute;
+				z-index:999;
+				margin-top:15px;
+				width:100%;
+			}
+			
+		</style>
+		<script type="text/javascript" charset="utf-8">
+				function gimmerandom(){
+					document.divsettings.submit();
+				}
+				
+				$(document).ready(function() {
+				
+				$(".randomdiv").click(function () {
+					//alert('blah');
+				      $(this).toggleClass("randomdiv_stuck");
+				    });
+				
+				
+					});
+		</script>
+	</head>
+	<body>
+		<div id="top_nav">
+				<form action="" method="get" name="divsettings" accept-charset="utf-8">
+					&nbsp;&nbsp;
+					<select name="lm" id="lm" onchange="this.form.submit()"  ><option value="▢">▢</option><option value="█" selected="selected">█</option></select>					</form>
+					<span style="position:absolute;top:0px;right:15px;">
+					<input type="button" name="random" value="hide + div" id="random" onclick="gimmerandom()">
+					<input type="button" name="credits"  onClick="window.open('http://www.teddavis.org');" value="ted davis 2012">
+					</span>
+
+
+		</div>
+		
+		
+		
+		<div id="1" class="randomdiv" style="position:absolute;left:1285px;top:564px;width:125px;height:202px;" >
+&nbsp;
+				</div><div id="2" class="randomdiv" style="position:absolute;left:1048px;top:1851px;width:258px;height:230px;" >
+&nbsp;
+				</div><div id="3" class="randomdiv" style="position:absolute;left:690px;top:386px;width:141px;height:320px;" >
+&nbsp;
+				</div><div id="4" class="randomdiv" style="position:absolute;left:1105px;top:314px;width:278px;height:61px;" >
+&nbsp;
+				</div><div id="5" class="randomdiv" style="position:absolute;left:1317px;top:1464px;width:14px;height:116px;" >
+&nbsp;
+				</div><div id="6" class="randomdiv" style="position:absolute;left:230px;top:650px;width:168px;height:120px;" >
+&nbsp;
+				</div><div id="7" class="randomdiv" style="position:absolute;left:1251px;top:433px;width:246px;height:282px;" >
+&nbsp;
+				</div><div id="8" class="randomdiv" style="position:absolute;left:95px;top:951px;width:194px;height:350px;" >
+&nbsp;
+				</div><div id="9" class="randomdiv" style="position:absolute;left:348px;top:1824px;width:315px;height:182px;" >
+&nbsp;
+				</div><div id="10" class="randomdiv" style="position:absolute;left:1641px;top:-34px;width:332px;height:313px;" >
+&nbsp;
+				</div><div id="11" class="randomdiv" style="position:absolute;left:1311px;top:267px;width:266px;height:109px;" >
+&nbsp;
+				</div><div id="12" class="randomdiv" style="position:absolute;left:1237px;top:88px;width:148px;height:135px;" >
+&nbsp;
+				</div><div id="13" class="randomdiv" style="position:absolute;left:1613px;top:459px;width:171px;height:234px;" >
+&nbsp;
+				</div><div id="14" class="randomdiv" style="position:absolute;left:941px;top:563px;width:21px;height:63px;" >
+&nbsp;
+				</div><div id="15" class="randomdiv" style="position:absolute;left:1269px;top:360px;width:69px;height:133px;" >
+&nbsp;
+				</div><div id="16" class="randomdiv" style="position:absolute;left:964px;top:801px;width:247px;height:268px;" >
+&nbsp;
+				</div><div id="17" class="randomdiv" style="position:absolute;left:1474px;top:1916px;width:183px;height:366px;" >
+&nbsp;
+				</div><div id="18" class="randomdiv" style="position:absolute;left:1819px;top:1929px;width:289px;height:371px;" >
+&nbsp;
+				</div><div id="19" class="randomdiv" style="position:absolute;left:790px;top:1315px;width:300px;height:130px;" >
+&nbsp;
+				</div><div id="20" class="randomdiv" style="position:absolute;left:821px;top:427px;width:69px;height:149px;" >
+&nbsp;
+				</div><div id="21" class="randomdiv" style="position:absolute;left:-51px;top:255px;width:213px;height:116px;" >
+&nbsp;
+				</div><div id="22" class="randomdiv" style="position:absolute;left:1235px;top:1267px;width:350px;height:40px;" >
+&nbsp;
+				</div><div id="23" class="randomdiv" style="position:absolute;left:1389px;top:1730px;width:134px;height:21px;" >
+&nbsp;
+				</div><div id="24" class="randomdiv" style="position:absolute;left:1244px;top:539px;width:46px;height:371px;" >
+&nbsp;
+				</div><div id="25" class="randomdiv" style="position:absolute;left:531px;top:705px;width:74px;height:78px;" >
+&nbsp;
+				</div><div id="26" class="randomdiv" style="position:absolute;left:332px;top:164px;width:136px;height:137px;" >
+&nbsp;
+				</div><div id="27" class="randomdiv" style="position:absolute;left:1558px;top:1600px;width:288px;height:375px;" >
+&nbsp;
+				</div><div id="28" class="randomdiv" style="position:absolute;left:1039px;top:1580px;width:384px;height:11px;" >
+&nbsp;
+				</div><div id="29" class="randomdiv" style="position:absolute;left:1581px;top:203px;width:290px;height:138px;" >
+&nbsp;
+				</div><div id="30" class="randomdiv" style="position:absolute;left:1697px;top:510px;width:205px;height:272px;" >
+&nbsp;
+				</div><div id="31" class="randomdiv" style="position:absolute;left:470px;top:1169px;width:366px;height:250px;" >
+&nbsp;
+				</div><div id="32" class="randomdiv" style="position:absolute;left:-31px;top:1479px;width:101px;height:140px;" >
+&nbsp;
+				</div><div id="33" class="randomdiv" style="position:absolute;left:1440px;top:1077px;width:142px;height:159px;" >
+&nbsp;
+				</div><div id="34" class="randomdiv" style="position:absolute;left:359px;top:90px;width:393px;height:98px;" >
+&nbsp;
+				</div><div id="35" class="randomdiv" style="position:absolute;left:801px;top:61px;width:226px;height:94px;" >
+&nbsp;
+				</div><div id="36" class="randomdiv" style="position:absolute;left:781px;top:48px;width:23px;height:342px;" >
+&nbsp;
+				</div><div id="37" class="randomdiv" style="position:absolute;left:169px;top:721px;width:64px;height:29px;" >
+&nbsp;
+				</div><div id="38" class="randomdiv" style="position:absolute;left:1881px;top:642px;width:218px;height:32px;" >
+&nbsp;
+				</div><div id="39" class="randomdiv" style="position:absolute;left:607px;top:654px;width:23px;height:338px;" >
+&nbsp;
+				</div><div id="40" class="randomdiv" style="position:absolute;left:1355px;top:1952px;width:277px;height:98px;" >
+&nbsp;
+				</div><div id="41" class="randomdiv" style="position:absolute;left:1756px;top:55px;width:303px;height:195px;" >
+&nbsp;
+				</div><div id="42" class="randomdiv" style="position:absolute;left:1429px;top:33px;width:213px;height:374px;" >
+&nbsp;
+				</div><div id="43" class="randomdiv" style="position:absolute;left:1377px;top:199px;width:54px;height:155px;" >
+&nbsp;
+				</div><div id="44" class="randomdiv" style="position:absolute;left:1794px;top:0px;width:150px;height:180px;" >
+&nbsp;
+				</div><div id="45" class="randomdiv" style="position:absolute;left:419px;top:1019px;width:242px;height:65px;" >
+&nbsp;
+				</div><div id="46" class="randomdiv" style="position:absolute;left:101px;top:1569px;width:199px;height:200px;" >
+&nbsp;
+				</div><div id="47" class="randomdiv" style="position:absolute;left:1226px;top:479px;width:306px;height:139px;" >
+&nbsp;
+				</div><div id="48" class="randomdiv" style="position:absolute;left:1904px;top:1797px;width:300px;height:254px;" >
+&nbsp;
+				</div><div id="49" class="randomdiv" style="position:absolute;left:-1px;top:1712px;width:147px;height:213px;" >
+&nbsp;
+				</div><div id="50" class="randomdiv" style="position:absolute;left:854px;top:1047px;width:39px;height:104px;" >
+&nbsp;
+				</div><div id="51" class="randomdiv" style="position:absolute;left:733px;top:1422px;width:137px;height:391px;" >
+&nbsp;
+				</div><div id="52" class="randomdiv" style="position:absolute;left:830px;top:856px;width:377px;height:346px;" >
+&nbsp;
+				</div><div id="53" class="randomdiv" style="position:absolute;left:716px;top:464px;width:158px;height:397px;" >
+&nbsp;
+				</div><div id="54" class="randomdiv" style="position:absolute;left:1652px;top:33px;width:183px;height:384px;" >
+&nbsp;
+				</div><div id="55" class="randomdiv" style="position:absolute;left:1437px;top:1160px;width:72px;height:393px;" >
+&nbsp;
+				</div><div id="56" class="randomdiv" style="position:absolute;left:1257px;top:403px;width:38px;height:117px;" >
+&nbsp;
+				</div><div id="57" class="randomdiv" style="position:absolute;left:1196px;top:1550px;width:291px;height:368px;" >
+&nbsp;
+				</div><div id="58" class="randomdiv" style="position:absolute;left:971px;top:1614px;width:314px;height:325px;" >
+&nbsp;
+				</div><div id="59" class="randomdiv" style="position:absolute;left:549px;top:1479px;width:283px;height:144px;" >
+&nbsp;
+				</div><div id="60" class="randomdiv" style="position:absolute;left:1684px;top:-40px;width:85px;height:34px;" >
+&nbsp;
+				</div><div id="61" class="randomdiv" style="position:absolute;left:792px;top:1744px;width:201px;height:338px;" >
+&nbsp;
+				</div><div id="62" class="randomdiv" style="position:absolute;left:1645px;top:1289px;width:187px;height:58px;" >
+&nbsp;
+				</div><div id="63" class="randomdiv" style="position:absolute;left:1445px;top:1958px;width:70px;height:280px;" >
+&nbsp;
+				</div><div id="64" class="randomdiv" style="position:absolute;left:1832px;top:1377px;width:358px;height:152px;" >
+&nbsp;
+				</div><div id="65" class="randomdiv" style="position:absolute;left:1897px;top:186px;width:127px;height:363px;" >
+&nbsp;
+				</div><div id="66" class="randomdiv" style="position:absolute;left:303px;top:1172px;width:328px;height:206px;" >
+&nbsp;
+				</div><div id="67" class="randomdiv" style="position:absolute;left:739px;top:1891px;width:267px;height:332px;" >
+&nbsp;
+				</div><div id="68" class="randomdiv" style="position:absolute;left:552px;top:211px;width:112px;height:105px;" >
+&nbsp;
+				</div><div id="69" class="randomdiv" style="position:absolute;left:1127px;top:1418px;width:44px;height:137px;" >
+&nbsp;
+				</div><div id="70" class="randomdiv" style="position:absolute;left:1366px;top:545px;width:202px;height:52px;" >
+&nbsp;
+				</div><div id="71" class="randomdiv" style="position:absolute;left:23px;top:955px;width:375px;height:252px;" >
+&nbsp;
+				</div><div id="72" class="randomdiv" style="position:absolute;left:847px;top:1897px;width:177px;height:392px;" >
+&nbsp;
+				</div><div id="73" class="randomdiv" style="position:absolute;left:1444px;top:25px;width:57px;height:129px;" >
+&nbsp;
+				</div><div id="74" class="randomdiv" style="position:absolute;left:182px;top:383px;width:204px;height:343px;" >
+&nbsp;
+				</div><div id="75" class="randomdiv" style="position:absolute;left:540px;top:1520px;width:307px;height:292px;" >
+&nbsp;
+				</div><div id="76" class="randomdiv" style="position:absolute;left:1979px;top:553px;width:305px;height:64px;" >
+&nbsp;
+				</div><div id="77" class="randomdiv" style="position:absolute;left:1948px;top:1715px;width:29px;height:110px;" >
+&nbsp;
+				</div><div id="78" class="randomdiv" style="position:absolute;left:96px;top:631px;width:169px;height:149px;" >
+&nbsp;
+				</div><div id="79" class="randomdiv" style="position:absolute;left:23px;top:-21px;width:341px;height:38px;" >
+&nbsp;
+				</div><div id="80" class="randomdiv" style="position:absolute;left:807px;top:1335px;width:116px;height:34px;" >
+&nbsp;
+				</div><div id="81" class="randomdiv" style="position:absolute;left:1014px;top:432px;width:216px;height:203px;" >
+&nbsp;
+				</div><div id="82" class="randomdiv" style="position:absolute;left:146px;top:731px;width:96px;height:60px;" >
+&nbsp;
+				</div><div id="83" class="randomdiv" style="position:absolute;left:1556px;top:464px;width:326px;height:260px;" >
+&nbsp;
+				</div><div id="84" class="randomdiv" style="position:absolute;left:1414px;top:1066px;width:100px;height:305px;" >
+&nbsp;
+				</div><div id="85" class="randomdiv" style="position:absolute;left:1145px;top:317px;width:119px;height:163px;" >
+&nbsp;
+				</div><div id="86" class="randomdiv" style="position:absolute;left:1957px;top:1579px;width:83px;height:43px;" >
+&nbsp;
+				</div><div id="87" class="randomdiv" style="position:absolute;left:83px;top:1044px;width:69px;height:98px;" >
+&nbsp;
+				</div><div id="88" class="randomdiv" style="position:absolute;left:18px;top:698px;width:374px;height:325px;" >
+&nbsp;
+				</div><div id="89" class="randomdiv" style="position:absolute;left:1129px;top:946px;width:331px;height:134px;" >
+&nbsp;
+				</div><div id="90" class="randomdiv" style="position:absolute;left:1969px;top:1285px;width:320px;height:262px;" >
+&nbsp;
+				</div><div id="91" class="randomdiv" style="position:absolute;left:282px;top:1321px;width:240px;height:41px;" >
+&nbsp;
+				</div><div id="92" class="randomdiv" style="position:absolute;left:171px;top:1122px;width:201px;height:301px;" >
+&nbsp;
+				</div><div id="93" class="randomdiv" style="position:absolute;left:635px;top:1194px;width:259px;height:112px;" >
+&nbsp;
+				</div><div id="94" class="randomdiv" style="position:absolute;left:1018px;top:1405px;width:11px;height:24px;" >
+&nbsp;
+				</div><div id="95" class="randomdiv" style="position:absolute;left:1850px;top:598px;width:350px;height:104px;" >
+&nbsp;
+				</div><div id="96" class="randomdiv" style="position:absolute;left:299px;top:1033px;width:13px;height:346px;" >
+&nbsp;
+				</div><div id="97" class="randomdiv" style="position:absolute;left:1951px;top:263px;width:90px;height:208px;" >
+&nbsp;
+				</div><div id="98" class="randomdiv" style="position:absolute;left:271px;top:570px;width:110px;height:130px;" >
+&nbsp;
+				</div><div id="99" class="randomdiv" style="position:absolute;left:1236px;top:1339px;width:166px;height:151px;" >
+&nbsp;
+				</div><div id="100" class="randomdiv" style="position:absolute;left:82px;top:1690px;width:273px;height:225px;" >
+&nbsp;
+				</div><div id="101" class="randomdiv" style="position:absolute;left:1027px;top:90px;width:265px;height:395px;" >
+&nbsp;
+				</div><div id="102" class="randomdiv" style="position:absolute;left:1226px;top:213px;width:217px;height:242px;" >
+&nbsp;
+				</div><div id="103" class="randomdiv" style="position:absolute;left:-40px;top:470px;width:250px;height:165px;" >
+&nbsp;
+				</div><div id="104" class="randomdiv" style="position:absolute;left:1371px;top:-14px;width:150px;height:298px;" >
+&nbsp;
+				</div><div id="105" class="randomdiv" style="position:absolute;left:1660px;top:1944px;width:183px;height:139px;" >
+&nbsp;
+				</div><div id="106" class="randomdiv" style="position:absolute;left:1733px;top:928px;width:25px;height:85px;" >
+&nbsp;
+				</div><div id="107" class="randomdiv" style="position:absolute;left:909px;top:1808px;width:239px;height:378px;" >
+&nbsp;
+				</div><div id="108" class="randomdiv" style="position:absolute;left:637px;top:1477px;width:397px;height:172px;" >
+&nbsp;
+				</div><div id="109" class="randomdiv" style="position:absolute;left:1056px;top:747px;width:148px;height:398px;" >
+&nbsp;
+				</div><div id="110" class="randomdiv" style="position:absolute;left:1595px;top:1732px;width:339px;height:218px;" >
+&nbsp;
+				</div><div id="111" class="randomdiv" style="position:absolute;left:1768px;top:995px;width:29px;height:165px;" >
+&nbsp;
+				</div><div id="112" class="randomdiv" style="position:absolute;left:1246px;top:917px;width:341px;height:307px;" >
+&nbsp;
+				</div><div id="113" class="randomdiv" style="position:absolute;left:311px;top:1395px;width:125px;height:238px;" >
+&nbsp;
+				</div><div id="114" class="randomdiv" style="position:absolute;left:941px;top:945px;width:112px;height:174px;" >
+&nbsp;
+				</div><div id="115" class="randomdiv" style="position:absolute;left:912px;top:131px;width:336px;height:54px;" >
+&nbsp;
+				</div><div id="116" class="randomdiv" style="position:absolute;left:1728px;top:1934px;width:175px;height:27px;" >
+&nbsp;
+				</div><div id="117" class="randomdiv" style="position:absolute;left:7px;top:1324px;width:170px;height:270px;" >
+&nbsp;
+				</div><div id="118" class="randomdiv" style="position:absolute;left:163px;top:135px;width:270px;height:169px;" >
+&nbsp;
+				</div><div id="119" class="randomdiv" style="position:absolute;left:55px;top:765px;width:126px;height:256px;" >
+&nbsp;
+				</div><div id="120" class="randomdiv" style="position:absolute;left:1746px;top:1935px;width:111px;height:137px;" >
+&nbsp;
+				</div><div id="121" class="randomdiv" style="position:absolute;left:1743px;top:1815px;width:148px;height:218px;" >
+&nbsp;
+				</div><div id="122" class="randomdiv" style="position:absolute;left:1013px;top:-77px;width:266px;height:238px;" >
+&nbsp;
+				</div><div id="123" class="randomdiv" style="position:absolute;left:398px;top:1284px;width:382px;height:254px;" >
+&nbsp;
+				</div><div id="124" class="randomdiv" style="position:absolute;left:1121px;top:-99px;width:97px;height:12px;" >
+&nbsp;
+				</div><div id="125" class="randomdiv" style="position:absolute;left:779px;top:400px;width:177px;height:395px;" >
+&nbsp;
+				</div><div id="126" class="randomdiv" style="position:absolute;left:1041px;top:1068px;width:223px;height:292px;" >
+&nbsp;
+				</div><div id="127" class="randomdiv" style="position:absolute;left:44px;top:1238px;width:114px;height:271px;" >
+&nbsp;
+				</div><div id="128" class="randomdiv" style="position:absolute;left:78px;top:279px;width:314px;height:32px;" >
+&nbsp;
+				</div><div id="129" class="randomdiv" style="position:absolute;left:429px;top:630px;width:392px;height:282px;" >
+&nbsp;
+				</div><div id="130" class="randomdiv" style="position:absolute;left:235px;top:587px;width:271px;height:118px;" >
+&nbsp;
+				</div><div id="131" class="randomdiv" style="position:absolute;left:-12px;top:1499px;width:125px;height:157px;" >
+&nbsp;
+				</div><div id="132" class="randomdiv" style="position:absolute;left:1336px;top:1467px;width:241px;height:337px;" >
+&nbsp;
+				</div><div id="133" class="randomdiv" style="position:absolute;left:1484px;top:1142px;width:381px;height:316px;" >
+&nbsp;
+				</div><div id="134" class="randomdiv" style="position:absolute;left:16px;top:178px;width:83px;height:46px;" >
+&nbsp;
+				</div><div id="135" class="randomdiv" style="position:absolute;left:764px;top:-100px;width:194px;height:60px;" >
+&nbsp;
+				</div><div id="136" class="randomdiv" style="position:absolute;left:1397px;top:815px;width:253px;height:156px;" >
+&nbsp;
+				</div><div id="137" class="randomdiv" style="position:absolute;left:147px;top:1049px;width:372px;height:186px;" >
+&nbsp;
+				</div><div id="138" class="randomdiv" style="position:absolute;left:15px;top:1715px;width:278px;height:244px;" >
+&nbsp;
+				</div><div id="139" class="randomdiv" style="position:absolute;left:1338px;top:460px;width:225px;height:114px;" >
+&nbsp;
+				</div><div id="140" class="randomdiv" style="position:absolute;left:1389px;top:336px;width:134px;height:263px;" >
+&nbsp;
+				</div><div id="141" class="randomdiv" style="position:absolute;left:76px;top:1294px;width:14px;height:190px;" >
+&nbsp;
+				</div><div id="142" class="randomdiv" style="position:absolute;left:1162px;top:138px;width:196px;height:355px;" >
+&nbsp;
+				</div><div id="143" class="randomdiv" style="position:absolute;left:1107px;top:1245px;width:24px;height:250px;" >
+&nbsp;
+				</div><div id="144" class="randomdiv" style="position:absolute;left:627px;top:519px;width:355px;height:130px;" >
+&nbsp;
+				</div><div id="145" class="randomdiv" style="position:absolute;left:593px;top:861px;width:389px;height:54px;" >
+&nbsp;
+				</div><div id="146" class="randomdiv" style="position:absolute;left:420px;top:325px;width:229px;height:54px;" >
+&nbsp;
+				</div><div id="147" class="randomdiv" style="position:absolute;left:688px;top:458px;width:158px;height:43px;" >
+&nbsp;
+				</div><div id="148" class="randomdiv" style="position:absolute;left:1743px;top:1679px;width:142px;height:248px;" >
+&nbsp;
+				</div><div id="149" class="randomdiv" style="position:absolute;left:377px;top:373px;width:371px;height:84px;" >
+&nbsp;
+				</div><div id="150" class="randomdiv" style="position:absolute;left:371px;top:767px;width:192px;height:10px;" >
+&nbsp;
+				</div><div id="151" class="randomdiv" style="position:absolute;left:1479px;top:40px;width:115px;height:214px;" >
+&nbsp;
+				</div><div id="152" class="randomdiv" style="position:absolute;left:544px;top:1617px;width:132px;height:363px;" >
+&nbsp;
+				</div><div id="153" class="randomdiv" style="position:absolute;left:42px;top:1033px;width:358px;height:298px;" >
+&nbsp;
+				</div><div id="154" class="randomdiv" style="position:absolute;left:812px;top:770px;width:208px;height:98px;" >
+&nbsp;
+				</div><div id="155" class="randomdiv" style="position:absolute;left:639px;top:609px;width:211px;height:96px;" >
+&nbsp;
+				</div><div id="156" class="randomdiv" style="position:absolute;left:689px;top:1745px;width:84px;height:338px;" >
+&nbsp;
+				</div><div id="157" class="randomdiv" style="position:absolute;left:1942px;top:1610px;width:210px;height:60px;" >
+&nbsp;
+				</div><div id="158" class="randomdiv" style="position:absolute;left:1390px;top:1384px;width:194px;height:222px;" >
+&nbsp;
+				</div><div id="159" class="randomdiv" style="position:absolute;left:1936px;top:1099px;width:111px;height:299px;" >
+&nbsp;
+				</div><div id="160" class="randomdiv" style="position:absolute;left:719px;top:1740px;width:193px;height:363px;" >
+&nbsp;
+				</div><div id="161" class="randomdiv" style="position:absolute;left:827px;top:289px;width:41px;height:203px;" >
+&nbsp;
+				</div><div id="162" class="randomdiv" style="position:absolute;left:798px;top:516px;width:168px;height:25px;" >
+&nbsp;
+				</div><div id="163" class="randomdiv" style="position:absolute;left:1663px;top:1422px;width:234px;height:169px;" >
+&nbsp;
+				</div><div id="164" class="randomdiv" style="position:absolute;left:152px;top:1853px;width:344px;height:147px;" >
+&nbsp;
+				</div><div id="165" class="randomdiv" style="position:absolute;left:-27px;top:870px;width:339px;height:169px;" >
+&nbsp;
+				</div><div id="166" class="randomdiv" style="position:absolute;left:303px;top:909px;width:388px;height:279px;" >
+&nbsp;
+				</div><div id="167" class="randomdiv" style="position:absolute;left:657px;top:93px;width:192px;height:211px;" >
+&nbsp;
+				</div><div id="168" class="randomdiv" style="position:absolute;left:386px;top:1743px;width:373px;height:299px;" >
+&nbsp;
+				</div><div id="169" class="randomdiv" style="position:absolute;left:1481px;top:978px;width:125px;height:32px;" >
+&nbsp;
+				</div><div id="170" class="randomdiv" style="position:absolute;left:645px;top:90px;width:84px;height:77px;" >
+&nbsp;
+				</div><div id="171" class="randomdiv" style="position:absolute;left:1164px;top:3px;width:328px;height:53px;" >
+&nbsp;
+				</div><div id="172" class="randomdiv" style="position:absolute;left:1574px;top:1695px;width:286px;height:75px;" >
+&nbsp;
+				</div><div id="173" class="randomdiv" style="position:absolute;left:284px;top:1780px;width:197px;height:209px;" >
+&nbsp;
+				</div><div id="174" class="randomdiv" style="position:absolute;left:1532px;top:824px;width:386px;height:117px;" >
+&nbsp;
+				</div><div id="175" class="randomdiv" style="position:absolute;left:71px;top:519px;width:145px;height:247px;" >
+&nbsp;
+				</div><div id="176" class="randomdiv" style="position:absolute;left:1384px;top:254px;width:296px;height:330px;" >
+&nbsp;
+				</div><div id="177" class="randomdiv" style="position:absolute;left:1709px;top:836px;width:71px;height:122px;" >
+&nbsp;
+				</div><div id="178" class="randomdiv" style="position:absolute;left:1443px;top:51px;width:47px;height:81px;" >
+&nbsp;
+				</div><div id="179" class="randomdiv" style="position:absolute;left:1316px;top:1899px;width:224px;height:245px;" >
+&nbsp;
+				</div><div id="180" class="randomdiv" style="position:absolute;left:382px;top:662px;width:45px;height:211px;" >
+&nbsp;
+				</div><div id="181" class="randomdiv" style="position:absolute;left:1684px;top:1756px;width:241px;height:389px;" >
+&nbsp;
+				</div><div id="182" class="randomdiv" style="position:absolute;left:1195px;top:1400px;width:346px;height:249px;" >
+&nbsp;
+				</div><div id="183" class="randomdiv" style="position:absolute;left:1369px;top:1942px;width:391px;height:204px;" >
+&nbsp;
+				</div><div id="184" class="randomdiv" style="position:absolute;left:753px;top:1292px;width:99px;height:192px;" >
+&nbsp;
+				</div><div id="185" class="randomdiv" style="position:absolute;left:771px;top:811px;width:254px;height:389px;" >
+&nbsp;
+				</div><div id="186" class="randomdiv" style="position:absolute;left:1379px;top:673px;width:309px;height:326px;" >
+&nbsp;
+				</div><div id="187" class="randomdiv" style="position:absolute;left:1805px;top:437px;width:383px;height:397px;" >
+&nbsp;
+				</div><div id="188" class="randomdiv" style="position:absolute;left:649px;top:1290px;width:209px;height:275px;" >
+&nbsp;
+				</div><div id="189" class="randomdiv" style="position:absolute;left:421px;top:1211px;width:194px;height:382px;" >
+&nbsp;
+				</div><div id="190" class="randomdiv" style="position:absolute;left:1831px;top:-74px;width:113px;height:290px;" >
+&nbsp;
+				</div><div id="191" class="randomdiv" style="position:absolute;left:-17px;top:632px;width:239px;height:357px;" >
+&nbsp;
+				</div><div id="192" class="randomdiv" style="position:absolute;left:1369px;top:725px;width:338px;height:299px;" >
+&nbsp;
+				</div><div id="193" class="randomdiv" style="position:absolute;left:685px;top:477px;width:344px;height:219px;" >
+&nbsp;
+				</div><div id="194" class="randomdiv" style="position:absolute;left:1936px;top:1015px;width:251px;height:166px;" >
+&nbsp;
+				</div><div id="195" class="randomdiv" style="position:absolute;left:1887px;top:742px;width:71px;height:306px;" >
+&nbsp;
+				</div><div id="196" class="randomdiv" style="position:absolute;left:1783px;top:743px;width:89px;height:19px;" >
+&nbsp;
+				</div><div id="197" class="randomdiv" style="position:absolute;left:1844px;top:1836px;width:355px;height:51px;" >
+&nbsp;
+				</div><div id="198" class="randomdiv" style="position:absolute;left:1517px;top:1235px;width:281px;height:198px;" >
+&nbsp;
+				</div><div id="199" class="randomdiv" style="position:absolute;left:1632px;top:714px;width:307px;height:232px;" >
+&nbsp;
+				</div><div id="200" class="randomdiv" style="position:absolute;left:1328px;top:35px;width:55px;height:288px;" >
+&nbsp;
+				</div><div id="201" class="randomdiv" style="position:absolute;left:1793px;top:1976px;width:286px;height:81px;" >
+&nbsp;
+				</div><div id="202" class="randomdiv" style="position:absolute;left:1398px;top:316px;width:233px;height:313px;" >
+&nbsp;
+				</div><div id="203" class="randomdiv" style="position:absolute;left:658px;top:1068px;width:184px;height:108px;" >
+&nbsp;
+				</div><div id="204" class="randomdiv" style="position:absolute;left:415px;top:1532px;width:170px;height:74px;" >
+&nbsp;
+				</div><div id="205" class="randomdiv" style="position:absolute;left:1399px;top:800px;width:79px;height:108px;" >
+&nbsp;
+				</div><div id="206" class="randomdiv" style="position:absolute;left:1357px;top:-99px;width:335px;height:79px;" >
+&nbsp;
+				</div><div id="207" class="randomdiv" style="position:absolute;left:-95px;top:802px;width:225px;height:277px;" >
+&nbsp;
+				</div><div id="208" class="randomdiv" style="position:absolute;left:173px;top:1685px;width:270px;height:80px;" >
+&nbsp;
+				</div><div id="209" class="randomdiv" style="position:absolute;left:1943px;top:1779px;width:56px;height:209px;" >
+&nbsp;
+				</div><div id="210" class="randomdiv" style="position:absolute;left:1060px;top:1079px;width:156px;height:114px;" >
+&nbsp;
+				</div><div id="211" class="randomdiv" style="position:absolute;left:1928px;top:1962px;width:282px;height:224px;" >
+&nbsp;
+				</div><div id="212" class="randomdiv" style="position:absolute;left:1241px;top:1057px;width:369px;height:240px;" >
+&nbsp;
+				</div><div id="213" class="randomdiv" style="position:absolute;left:1558px;top:626px;width:186px;height:121px;" >
+&nbsp;
+				</div><div id="214" class="randomdiv" style="position:absolute;left:217px;top:1998px;width:272px;height:319px;" >
+&nbsp;
+				</div><div id="215" class="randomdiv" style="position:absolute;left:837px;top:1671px;width:156px;height:227px;" >
+&nbsp;
+				</div><div id="216" class="randomdiv" style="position:absolute;left:132px;top:466px;width:115px;height:131px;" >
+&nbsp;
+				</div><div id="217" class="randomdiv" style="position:absolute;left:84px;top:1983px;width:151px;height:391px;" >
+&nbsp;
+				</div><div id="218" class="randomdiv" style="position:absolute;left:1871px;top:267px;width:183px;height:382px;" >
+&nbsp;
+				</div><div id="219" class="randomdiv" style="position:absolute;left:1623px;top:591px;width:132px;height:76px;" >
+&nbsp;
+				</div><div id="220" class="randomdiv" style="position:absolute;left:968px;top:1347px;width:368px;height:23px;" >
+&nbsp;
+				</div><div id="221" class="randomdiv" style="position:absolute;left:1171px;top:963px;width:239px;height:320px;" >
+&nbsp;
+				</div><div id="222" class="randomdiv" style="position:absolute;left:1917px;top:826px;width:41px;height:20px;" >
+&nbsp;
+				</div><div id="223" class="randomdiv" style="position:absolute;left:1964px;top:242px;width:103px;height:105px;" >
+&nbsp;
+				</div><div id="224" class="randomdiv" style="position:absolute;left:375px;top:-77px;width:253px;height:351px;" >
+&nbsp;
+				</div><div id="225" class="randomdiv" style="position:absolute;left:430px;top:638px;width:289px;height:91px;" >
+&nbsp;
+				</div><div id="226" class="randomdiv" style="position:absolute;left:402px;top:1733px;width:383px;height:159px;" >
+&nbsp;
+				</div><div id="227" class="randomdiv" style="position:absolute;left:1746px;top:1402px;width:173px;height:362px;" >
+&nbsp;
+				</div><div id="228" class="randomdiv" style="position:absolute;left:335px;top:349px;width:400px;height:57px;" >
+&nbsp;
+				</div><div id="229" class="randomdiv" style="position:absolute;left:1763px;top:1665px;width:127px;height:351px;" >
+&nbsp;
+				</div><div id="230" class="randomdiv" style="position:absolute;left:1321px;top:1748px;width:176px;height:90px;" >
+&nbsp;
+				</div><div id="231" class="randomdiv" style="position:absolute;left:1798px;top:1864px;width:84px;height:44px;" >
+&nbsp;
+				</div><div id="232" class="randomdiv" style="position:absolute;left:1144px;top:740px;width:164px;height:264px;" >
+&nbsp;
+				</div><div id="233" class="randomdiv" style="position:absolute;left:1477px;top:1508px;width:392px;height:389px;" >
+&nbsp;
+				</div><div id="234" class="randomdiv" style="position:absolute;left:1165px;top:1226px;width:22px;height:135px;" >
+&nbsp;
+				</div><div id="235" class="randomdiv" style="position:absolute;left:1236px;top:788px;width:380px;height:177px;" >
+&nbsp;
+				</div><div id="236" class="randomdiv" style="position:absolute;left:1987px;top:1269px;width:92px;height:96px;" >
+&nbsp;
+				</div><div id="237" class="randomdiv" style="position:absolute;left:951px;top:1757px;width:32px;height:345px;" >
+&nbsp;
+				</div><div id="238" class="randomdiv" style="position:absolute;left:447px;top:1975px;width:239px;height:399px;" >
+&nbsp;
+				</div><div id="239" class="randomdiv" style="position:absolute;left:1208px;top:1792px;width:363px;height:315px;" >
+&nbsp;
+				</div><div id="240" class="randomdiv" style="position:absolute;left:50px;top:517px;width:297px;height:274px;" >
+&nbsp;
+				</div><div id="241" class="randomdiv" style="position:absolute;left:1820px;top:1358px;width:242px;height:183px;" >
+&nbsp;
+				</div><div id="242" class="randomdiv" style="position:absolute;left:1687px;top:279px;width:259px;height:12px;" >
+&nbsp;
+				</div><div id="243" class="randomdiv" style="position:absolute;left:481px;top:1970px;width:94px;height:276px;" >
+&nbsp;
+				</div><div id="244" class="randomdiv" style="position:absolute;left:1202px;top:1471px;width:299px;height:249px;" >
+&nbsp;
+				</div><div id="245" class="randomdiv" style="position:absolute;left:958px;top:1730px;width:265px;height:86px;" >
+&nbsp;
+				</div><div id="246" class="randomdiv" style="position:absolute;left:225px;top:1170px;width:21px;height:87px;" >
+&nbsp;
+				</div><div id="247" class="randomdiv" style="position:absolute;left:870px;top:1637px;width:55px;height:220px;" >
+&nbsp;
+				</div><div id="248" class="randomdiv" style="position:absolute;left:78px;top:8px;width:289px;height:192px;" >
+&nbsp;
+				</div><div id="249" class="randomdiv" style="position:absolute;left:346px;top:641px;width:188px;height:145px;" >
+&nbsp;
+				</div><div id="250" class="randomdiv" style="position:absolute;left:1835px;top:1259px;width:68px;height:58px;" >
+&nbsp;
+				</div><div id="251" class="randomdiv" style="position:absolute;left:978px;top:632px;width:335px;height:301px;" >
+&nbsp;
+				</div><div id="252" class="randomdiv" style="position:absolute;left:456px;top:1644px;width:87px;height:253px;" >
+&nbsp;
+				</div><div id="253" class="randomdiv" style="position:absolute;left:145px;top:820px;width:233px;height:194px;" >
+&nbsp;
+				</div><div id="254" class="randomdiv" style="position:absolute;left:137px;top:207px;width:130px;height:92px;" >
+&nbsp;
+				</div><div id="255" class="randomdiv" style="position:absolute;left:1269px;top:926px;width:167px;height:173px;" >
+&nbsp;
+				</div><div id="256" class="randomdiv" style="position:absolute;left:376px;top:743px;width:260px;height:138px;" >
+&nbsp;
+				</div><div id="257" class="randomdiv" style="position:absolute;left:40px;top:1719px;width:21px;height:205px;" >
+&nbsp;
+				</div><div id="258" class="randomdiv" style="position:absolute;left:1367px;top:1536px;width:93px;height:331px;" >
+&nbsp;
+				</div><div id="259" class="randomdiv" style="position:absolute;left:1700px;top:1537px;width:55px;height:272px;" >
+&nbsp;
+				</div><div id="260" class="randomdiv" style="position:absolute;left:303px;top:1738px;width:310px;height:111px;" >
+&nbsp;
+				</div><div id="261" class="randomdiv" style="position:absolute;left:1414px;top:548px;width:74px;height:359px;" >
+&nbsp;
+				</div><div id="262" class="randomdiv" style="position:absolute;left:1363px;top:1255px;width:125px;height:360px;" >
+&nbsp;
+				</div><div id="263" class="randomdiv" style="position:absolute;left:775px;top:1205px;width:338px;height:142px;" >
+&nbsp;
+				</div><div id="264" class="randomdiv" style="position:absolute;left:1454px;top:511px;width:358px;height:355px;" >
+&nbsp;
+				</div><div id="265" class="randomdiv" style="position:absolute;left:217px;top:1598px;width:333px;height:96px;" >
+&nbsp;
+				</div><div id="266" class="randomdiv" style="position:absolute;left:1346px;top:354px;width:85px;height:90px;" >
+&nbsp;
+				</div><div id="267" class="randomdiv" style="position:absolute;left:1797px;top:961px;width:326px;height:379px;" >
+&nbsp;
+				</div><div id="268" class="randomdiv" style="position:absolute;left:314px;top:675px;width:220px;height:388px;" >
+&nbsp;
+				</div><div id="269" class="randomdiv" style="position:absolute;left:1461px;top:556px;width:375px;height:13px;" >
+&nbsp;
+				</div><div id="270" class="randomdiv" style="position:absolute;left:389px;top:1876px;width:59px;height:289px;" >
+&nbsp;
+				</div><div id="271" class="randomdiv" style="position:absolute;left:953px;top:650px;width:143px;height:284px;" >
+&nbsp;
+				</div><div id="272" class="randomdiv" style="position:absolute;left:1097px;top:-30px;width:232px;height:312px;" >
+&nbsp;
+				</div><div id="273" class="randomdiv" style="position:absolute;left:1344px;top:1934px;width:58px;height:306px;" >
+&nbsp;
+				</div><div id="274" class="randomdiv" style="position:absolute;left:821px;top:1837px;width:128px;height:210px;" >
+&nbsp;
+				</div><div id="275" class="randomdiv" style="position:absolute;left:916px;top:850px;width:176px;height:325px;" >
+&nbsp;
+				</div><div id="276" class="randomdiv" style="position:absolute;left:961px;top:628px;width:199px;height:398px;" >
+&nbsp;
+				</div><div id="277" class="randomdiv" style="position:absolute;left:656px;top:1038px;width:31px;height:400px;" >
+&nbsp;
+				</div><div id="278" class="randomdiv" style="position:absolute;left:326px;top:472px;width:225px;height:382px;" >
+&nbsp;
+				</div><div id="279" class="randomdiv" style="position:absolute;left:1796px;top:964px;width:390px;height:158px;" >
+&nbsp;
+				</div><div id="280" class="randomdiv" style="position:absolute;left:1720px;top:1330px;width:170px;height:71px;" >
+&nbsp;
+				</div><div id="281" class="randomdiv" style="position:absolute;left:1668px;top:1777px;width:161px;height:107px;" >
+&nbsp;
+				</div><div id="282" class="randomdiv" style="position:absolute;left:1238px;top:1537px;width:281px;height:302px;" >
+&nbsp;
+				</div><div id="283" class="randomdiv" style="position:absolute;left:1326px;top:1743px;width:135px;height:388px;" >
+&nbsp;
+				</div><div id="284" class="randomdiv" style="position:absolute;left:1299px;top:378px;width:97px;height:147px;" >
+&nbsp;
+				</div><div id="285" class="randomdiv" style="position:absolute;left:1709px;top:9px;width:243px;height:372px;" >
+&nbsp;
+				</div><div id="286" class="randomdiv" style="position:absolute;left:1969px;top:1048px;width:134px;height:109px;" >
+&nbsp;
+				</div><div id="287" class="randomdiv" style="position:absolute;left:1144px;top:704px;width:289px;height:62px;" >
+&nbsp;
+				</div><div id="288" class="randomdiv" style="position:absolute;left:633px;top:50px;width:247px;height:339px;" >
+&nbsp;
+				</div><div id="289" class="randomdiv" style="position:absolute;left:605px;top:1696px;width:126px;height:239px;" >
+&nbsp;
+				</div><div id="290" class="randomdiv" style="position:absolute;left:158px;top:540px;width:338px;height:137px;" >
+&nbsp;
+				</div><div id="291" class="randomdiv" style="position:absolute;left:564px;top:1574px;width:335px;height:108px;" >
+&nbsp;
+				</div><div id="292" class="randomdiv" style="position:absolute;left:908px;top:579px;width:99px;height:266px;" >
+&nbsp;
+				</div><div id="293" class="randomdiv" style="position:absolute;left:1962px;top:1552px;width:182px;height:284px;" >
+&nbsp;
+				</div><div id="294" class="randomdiv" style="position:absolute;left:1413px;top:1233px;width:297px;height:85px;" >
+&nbsp;
+				</div><div id="295" class="randomdiv" style="position:absolute;left:870px;top:1207px;width:394px;height:26px;" >
+&nbsp;
+				</div><div id="296" class="randomdiv" style="position:absolute;left:1418px;top:1545px;width:208px;height:142px;" >
+&nbsp;
+				</div><div id="297" class="randomdiv" style="position:absolute;left:1758px;top:227px;width:225px;height:59px;" >
+&nbsp;
+				</div><div id="298" class="randomdiv" style="position:absolute;left:1093px;top:1019px;width:54px;height:110px;" >
+&nbsp;
+				</div><div id="299" class="randomdiv" style="position:absolute;left:1685px;top:231px;width:35px;height:338px;" >
+&nbsp;
+				</div><div id="300" class="randomdiv" style="position:absolute;left:998px;top:1418px;width:271px;height:344px;" >
+&nbsp;
+				</div>	</body>
+</html>

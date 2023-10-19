@@ -1,6 +1,6 @@
-# [OCAD Design Guild](https://designguild.studio)
+# [100m studio](https://100m.studio)
 
-ODG is an in-house student-run design studio,facilitating co-operation within our campus.
+100m is an in-house design studio at OCAD run by students,facilitating co-operation within the campus.
 
 ## To DO for the website
 
@@ -8,10 +8,10 @@ ODG is an in-house student-run design studio,facilitating co-operation within ou
 - [x] Fix resize for the main box
 - [x] Fix margins and paddings
 - [x] Add google sheet background editor
-- [ ] Update newsletter
-- [ ] Rss feed?
-- [x] Land Acknowledgement
 - [x] Things that inspired the guild
-- [ ] Change name and all? (website + sheet)
+- [x] Land Acknowledgement
+- [x] Update newsletter
+- [x] Change name and all? (website + sheet)
 - [ ] Change background update
 - [ ] UI update?
+- [ ] Rss feed?
