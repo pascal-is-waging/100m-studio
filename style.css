@@ -39,6 +39,27 @@ body {
   margin: 0px;
   background: white url("") repeat scroll -18px -10px;
 }
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 1;
+  text-align: center;
+}
+.popup-content {
+  margin: 2% auto;
+  display: block;
+  max-width: 70%;
+  max-height: 95%;
+}
+.popup.active {
+  display: flex;
+  align-items: center;
+}
 .change-back {
   position: fixed;
   left: 5vw;
@@ -95,7 +116,7 @@ body {
   font-family: healB;
   font-size: 3rem;
   color: var(--accent-color);
-  margin: 1rem 2rem 3rem 0;
+  margin: 1rem 2rem 2rem 0;
 }
 .block-img {
   width: 100%;
@@ -412,6 +433,9 @@ input {
   }
   #signup-header {
     font-size: 2.5rem;
+  }
+  .popup-content {
+    max-width: 100%;
   }
   .pages.third {
     display: none;

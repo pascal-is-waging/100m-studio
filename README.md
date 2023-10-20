@@ -14,3 +14,4 @@
 - [x] Change name and all? (website + sheet)
 - [x] Change background update
 - [ ] UI update?
+- [ ] Add picture pop-up

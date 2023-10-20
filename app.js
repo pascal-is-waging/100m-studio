@@ -82,6 +82,7 @@
 })();
 let states = ["ss01", "aalt", "ss02", "ss03", "ss04", "none"];
 const header = $(".header");
+const temppop = $(".popup");
 // const sheet = new Sheets("1BBdx4ltlF4_FdP2KahXzP8d_DRp3KANYgfI-A04mUV4");
 const sheet = new Sheets("1t5KQxRLhwsDz6YugontnYx1FkmKMXRsIm7Ty4Zba6UU");
 //get data from the google sheet
@@ -118,6 +119,17 @@ function checkCase(letter) {
     return false;
   }
 }
+$(".block-img").click((e) => {
+  const temp2 = $(".popup-content");
+  temppop.addClass("active");
+  // console.log(e.target.getAttribute("src"));
+  temp2.attr("src", e.target.getAttribute("src"));
+  // console.log(`${$(this).src}`);
+});
+$(".popup-content").click(() => {
+  // console.log();
+  temppop.removeClass("active");
+});
 //function for reload btn
 function reloadThePage() {
   window.location.reload(true);
@@ -144,7 +156,7 @@ function givemethatlink(r) {
     }
   }
 }
-//if mobile change when touch
+//if mobile change when scroll
 if (isMobile.any) {
   $(document).on("scroll", function (e) {
     e.preventDefault();
