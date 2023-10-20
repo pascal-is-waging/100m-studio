@@ -7,10 +7,10 @@
   font-family: healB;
   src: url("fonts/HealTheWebB-Regular.otf");
 }
-@font-face {
+/* @font-face {
   font-family: linea;
   src: url("fonts/Linea.otf");
-}
+} */
 @font-face {
   font-family: basker1;
   src: url("fonts/BBBBaskervvol-Base.woff"),
@@ -24,7 +24,8 @@
 :root {
   --main-color: #00ffb366;
   --right-color: #9affe1fa;
-
+  /* --main-color: #0200ffab;
+  --right-color: #806dfe; */
   --accent-color: blue;
 }
 * {
@@ -81,11 +82,44 @@ body {
 .header-right {
   width: 100%;
   height: max-content;
+  /* border: 2px dotted #ceffd8; */
   border: 3px dotted #d4f4ea;
   background-color: var(--right-color);
+  /* box-shadow: 5px 5px 100px 20px rgba(255, 255, 255, 0.09); */
   box-shadow: 5px 5px 100px 20px rgba(255, 255, 255, 0.5);
-  padding: 0.8rem 1rem 0.5rem 3rem;
+  padding: 0.8rem 1rem 0.5rem 2rem;
   margin-bottom: 1rem;
+}
+/* blocks formating */
+.block-title {
+  font-family: healB;
+  font-size: 3rem;
+  color: var(--accent-color);
+}
+.block-img {
+  width: 100%;
+}
+.block-content {
+  font-family: basker1;
+  color: black;
+  font-size: 2.5rem;
+  margin-right: 2rem;
+}
+.block-content.top {
+  font-size: 2.6rem;
+}
+.block-content-left {
+  width: 80%;
+  /* width: max-content; */
+  font-family: basker1;
+  color: black;
+  font-size: 1.6rem;
+}
+.block-content-link {
+  font-family: basker1;
+  color: var(--accent-color);
+  font-size: 2.5rem;
+  text-decoration: none;
 }
 .news-right {
   width: 100%;
@@ -93,7 +127,7 @@ body {
   border: 3px dotted #d4f4ea;
   background-color: var(--right-color);
   box-shadow: 5px 5px 100px 20px rgba(255, 255, 255, 0.5);
-  padding: 0.8rem 1rem 0.5rem 3rem;
+  padding: 0.8rem 1rem 0.5rem 2rem;
   margin-bottom: 3rem;
 }
 .guild-update {
@@ -231,34 +265,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* blocks formating */
-.block-title {
-  font-family: healB;
-  font-size: 3rem;
-  color: var(--accent-color);
-}
-.block-content {
-  font-family: basker1;
-  color: black;
-  font-size: 2.5rem;
-  margin-right: 2rem;
-}
-.block-content.top {
-  font-size: 2.6rem;
-}
-.block-content-left {
-  width: 80%;
-  /* width: max-content; */
-  font-family: basker1;
-  color: black;
-  font-size: 1.6rem;
-}
-.block-content-link {
-  font-family: basker1;
-  color: var(--accent-color);
-  font-size: 2.5rem;
-  text-decoration: none;
-}
+
 .signup {
   clear: left;
   font-family: basker1;
@@ -319,6 +326,14 @@ input {
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
+.mtag {
+  font-size: 4.5rem;
+  font-style: italic;
+}
+
+/* Hover states
+-------------------------------------
+ */
 .pagelinks:hover {
   color: #ffffff;
   text-shadow: 0px 0px 10px var(--accent-color);
@@ -386,12 +401,15 @@ input {
   box-shadow: rgb(85, 105, 255) 2px 2px 20px;
 }
 /* all the mobile getting handled here */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   body {
     /* background-color: lightblue; */
     width: 100vw;
     margin: 0px;
     padding: 1rem;
+  }
+  #title {
+    /* font-size: 4.5rem;s */
   }
   .pages.third {
     display: none;
@@ -406,15 +424,18 @@ input {
     align-content: center;
     justify-content: center;
   }
-  .container-right {
+  .container-left {
     width: 100%;
+  }
+  .mtag {
+    font-size: 3rem;
+  }
+  .container-right {
+    width: 80vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-  }
-  .header-right {
-    padding: 0.8rem 1rem 0.5rem 2rem;
   }
   .guild-update {
     font-size: 4rem;
