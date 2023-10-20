@@ -87,7 +87,7 @@ body {
   background-color: var(--right-color);
   /* box-shadow: 5px 5px 100px 20px rgba(255, 255, 255, 0.09); */
   box-shadow: 5px 5px 100px 20px rgba(255, 255, 255, 0.5);
-  padding: 0.8rem 1rem 0.5rem 2rem;
+  padding: 2rem 1rem 0.5rem 2rem;
   margin-bottom: 1rem;
 }
 /* blocks formating */
@@ -95,6 +95,7 @@ body {
   font-family: healB;
   font-size: 3rem;
   color: var(--accent-color);
+  margin: 1rem 2rem 3rem 0;
 }
 .block-img {
   width: 100%;
@@ -103,7 +104,8 @@ body {
   font-family: basker1;
   color: black;
   font-size: 2.5rem;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
+  margin: 0.8rem 2rem 0.5rem 0rem;
 }
 .block-content.top {
   font-size: 2.6rem;
@@ -146,7 +148,7 @@ body {
   /* text-shadow: 0px 20px 35px rgb(0 39 255 / 55%); */
   -webkit-text-stroke-width: 0.7px;
   -webkit-text-stroke-color: #30ffc3;
-
+  margin: 0;
   transition: all 0.5s ease-in-out;
 }
 .guild-info.about {
