@@ -8,10 +8,9 @@
 - [x] Fix resize for the main box
 - [x] Fix margins and paddings
 - [x] Add google sheet background editor
-- [x] Things that inspired the guild
+- [x] Things that inspired the studio
 - [x] Land Acknowledgement
 - [x] Update newsletter
 - [x] Change name and all? (website + sheet)
-- [ ] Change background update
+- [x] Change background update
 - [ ] UI update?
-- [ ] Rss feed?
