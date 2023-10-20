@@ -119,15 +119,13 @@ function checkCase(letter) {
     return false;
   }
 }
+//popup action for the images
 $(".block-img").click((e) => {
   const temp2 = $(".popup-content");
   temppop.addClass("active");
-  // console.log(e.target.getAttribute("src"));
   temp2.attr("src", e.target.getAttribute("src"));
-  // console.log(`${$(this).src}`);
 });
 $(".popup-content").click(() => {
-  // console.log();
   temppop.removeClass("active");
 });
 //function for reload btn

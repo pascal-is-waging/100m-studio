@@ -13,5 +13,5 @@
 - [x] Update newsletter
 - [x] Change name and all? (website + sheet)
 - [x] Change background update
+- [x] Add picture pop-up
 - [ ] UI update?
-- [ ] Add picture pop-up
