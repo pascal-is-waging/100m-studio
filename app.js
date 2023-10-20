@@ -144,8 +144,9 @@ function givemethatlink(r) {
     }
   }
 }
+//if mobile change when touch
 if (isMobile.any) {
-  $(document).on("touchmove", function (e) {
+  $(document).on("scroll", function (e) {
     e.preventDefault();
     if (Math.random() > 0.8) {
       const temp = document.querySelectorAll(".change");
