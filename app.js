@@ -83,10 +83,7 @@
 let states = ["ss01", "aalt", "ss02", "ss03", "ss04", "none"];
 const header = $(".header");
 const temppop = $(".popup");
-// const sheet = new Sheets("1BBdx4ltlF4_FdP2KahXzP8d_DRp3KANYgfI-A04mUV4");
-const sheet = new Sheets("1t5KQxRLhwsDz6YugontnYx1FkmKMXRsIm7Ty4Zba6UU");
-//get data from the google sheet
-doWork(sheet);
+
 // changing typeface animation for the design guild
 // change the css tag randomly based on the states array:
 header.mousemove(function () {
@@ -194,3 +191,8 @@ if (isMobile.any) {
 //   divleft.css("width", `${header.width() + 30}px `);
 //   window.requestAnimationFrame(checkthing);
 // }
+
+// // const sheet = new Sheets("1BBdx4ltlF4_FdP2KahXzP8d_DRp3KANYgfI-A04mUV4");
+// const sheet = new Sheets("1t5KQxRLhwsDz6YugontnYx1FkmKMXRsIm7Ty4Zba6UU");
+// //get data from the google sheet
+// doWork(sheet);
