@@ -84,13 +84,13 @@ let states = ["ss01", "aalt", "ss02", "ss03", "ss04", "none"];
 const header = $(".header");
 const temppop = $(".popup");
 
-// changing typeface animation for the design guild
+// changing typeface animation for the 100m studio
 // change the css tag randomly based on the states array:
 header.mousemove(function () {
+  //if the cursor is in the both randomly change the font-feature attribute
   if (Math.random() > 0.8) {
     const temp = document.querySelectorAll(".change");
     temp.forEach((element) => {
-      // console.log(element);
       console.log(`${header.width()}`);
       let ran = parseInt(Math.random() * states.length);
       element.setAttribute("style", `font-feature-settings:"${states[ran]}"`);
@@ -100,8 +100,6 @@ header.mousemove(function () {
         } else {
           element.innerHTML = element.innerHTML.toUpperCase();
         }
-        // const divleft = $(".container-left");
-        // divleft.css("width", `${header.width() + 30}px `);
       }
     });
   } else {
