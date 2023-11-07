@@ -169,6 +169,7 @@ body {
 }
 .block-img {
   width: 50%;
+  margin-top: 1rem;
 }
 .block-img-working {
   width: 100%;
@@ -198,6 +199,9 @@ body {
   color: var(--accent-color);
   font-size: 2.5rem;
   text-decoration: none;
+}
+.block-content-link.alter {
+  font-size: 2rem;
 }
 .news-right {
   width: 100%;
