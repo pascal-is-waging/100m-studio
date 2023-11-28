@@ -168,8 +168,9 @@ body {
   /* color: black; */
 }
 .block-img {
-  width: 50%;
+  width: 60%;
   margin-top: 1rem;
+  filter: grayscale(1);
 }
 .block-img-working {
   width: 100%;
