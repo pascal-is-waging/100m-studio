@@ -84,7 +84,7 @@ let states = ["ss01", "aalt", "ss02", "ss03", "ss04", "none"];
 const header = $(".header");
 const temppop = $(".popup");
 //notice
-let text = "Currently Rebranding";
+let text = "Currently Updating the website";
 const notice = $(".notice");
 const not_container = $(".notice-container");
 let letters = text.split("");

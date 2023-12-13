@@ -93,6 +93,9 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
 }
+.notice-container {
+  width: 52vw;
+}
 .notice:nth-child(5n) {
   animation-duration: 1s;
 }
