@@ -68,6 +68,57 @@ body {
   display: flex;
   align-items: center;
 }
+.popup.update {
+  display: flex;
+  align-items: center;
+  background-color: #9affe1de;
+}
+.popup-content.update {
+  margin: 2% auto;
+  display: flex;
+  max-width: 70%;
+  max-height: 95%;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.notice {
+  font-size: 8rem;
+  font-family: "healB";
+  text-shadow: 1px -5px 10px rgba(0, 0, 255, 0.55),
+    20px 20px 18px rgba(0, 0, 255, 0.26),
+    1px -14px 17px rgba(255, 254, 252, 0.18);
+  color: white;
+  animation-name: notice-ani;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.notice:nth-child(5n) {
+  animation-duration: 1s;
+}
+.notice:nth-child(5n + 1) {
+  animation-duration: 5s;
+}
+.notice:nth-child(5n + 2) {
+  animation-duration: 2s;
+}
+.notice:nth-child(5n + 3) {
+  animation-duration: 0.5s;
+}
+.notice:nth-child(5n + 4) {
+  animation-duration: 4s;
+}
+.notice.small {
+  font-size: 3rem;
+  text-shadow: 1px -5px 10px rgba(0, 0, 255, 0.55),
+    20px 10px 18px rgba(0, 0, 255, 0.26),
+    1px -14px 17px rgba(255, 254, 252, 0.18);
+  /* color: white; */
+  color: var(--accent-color);
+  /* font-family: "basker1"; */
+  /* color: var(--accent-color); */
+  /* text-shadow: none; */
+}
 .change-back {
   position: fixed;
   left: 5vw;
@@ -83,6 +134,9 @@ body {
   flex-direction: row;
   align-items: flex-start;
   gap: 2rem;
+}
+.main.updating {
+  filter: blur(5px);
 }
 .container-left {
   /* width: max-content; */
@@ -454,8 +508,9 @@ input {
   text-decoration: none;
 }
 .popup-content:hover {
-  cursor: alias;
+  cursor: progress;
 }
+
 /* .guild-info:hover {
   color: #ffffff;
   text-shadow: 0px 0px 20px var(--accent-color);
@@ -486,6 +541,26 @@ input {
 #refreshBTN:hover {
   box-shadow: rgb(85, 105, 255) 2px 2px 20px;
 }
+/*
+
+`
+
+*/
+
+@keyframes notice-ani {
+  from {
+    text-shadow: 0px 0px 10px rgba(0, 0, 255, 0.55),
+      0px 20px 18px rgb(0 0 255 / 19%), 1px -14px 17px rgba(255, 254, 252, 0.18);
+    transform: translate(0, 0);
+  }
+  to {
+    text-shadow: 0px 0px 10px rgba(0, 0, 255, 0.55),
+      0px -20px 18px rgb(0 0 255 / 19%),
+      1px -14px 17px rgba(255, 254, 252, 0.18);
+    transform: translate(-10%, 10%);
+  }
+}
+
 /* all the mobile getting handled here */
 @media only screen and (max-width: 800px) {
   body {

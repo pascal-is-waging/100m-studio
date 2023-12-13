@@ -83,7 +83,35 @@
 let states = ["ss01", "aalt", "ss02", "ss03", "ss04", "none"];
 const header = $(".header");
 const temppop = $(".popup");
-
+//notice
+let text = "Currently Rebranding";
+const notice = $(".notice");
+const not_container = $(".notice-container");
+let letters = text.split("");
+for (x in letters) {
+  const temp = document.createElement("span");
+  temp.classList.add("notice");
+  temp.innerHTML += `${letters[x]}`;
+  not_container.append(temp);
+}
+not_container.mousemove(() => {
+  if (Math.random() > 0.9) {
+    const temp = document.querySelectorAll(".notice");
+    temp.forEach((element) => {
+      // console.log(`${header.width()}`);
+      let ran = parseInt(Math.random() * states.length);
+      element.setAttribute("style", `font-feature-settings:"${states[ran]}"`);
+      if (Math.random() > 0.8) {
+        if (checkCase(element.innerHTML)) {
+          element.innerHTML = element.innerHTML.toLowerCase();
+        } else {
+          element.innerHTML = element.innerHTML.toUpperCase();
+        }
+      }
+    });
+  } else {
+  }
+});
 // changing typeface animation for the 100m studio
 // change the css tag randomly based on the states array:
 header.mousemove(function () {
@@ -127,11 +155,10 @@ $(".popup-content").click(() => {
 function reloadThePage() {
   window.location.reload(true);
 }
+//changing the background function
 async function doWork(s) {
   try {
-    // location.reload(true);
     const res = await s.getMyData();
-    // console.log(s);
     Rows = s.collapseKeys("Images");
     //add the last url to the background
     temp = givemethatlink(Rows);
