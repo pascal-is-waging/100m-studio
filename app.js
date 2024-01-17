@@ -88,12 +88,6 @@ let text = "Currently Updating the website";
 const notice = $(".notice");
 const not_container = $(".notice-container");
 let letters = text.split("");
-for (x in letters) {
-  const temp = document.createElement("span");
-  temp.classList.add("notice");
-  temp.innerHTML += `${letters[x]}`;
-  not_container.append(temp);
-}
 not_container.mousemove(() => {
   if (Math.random() > 0.9) {
     const temp = document.querySelectorAll(".notice");
@@ -113,14 +107,22 @@ not_container.mousemove(() => {
   }
 });
 // changing typeface animation for the 100m studio
+
 // change the css tag randomly based on the states array:
-header.mousemove(function () {
+const rangeSlider = document.getElementById("myRange");
+$("#myRange").on("input", function () {
+  const currentValue = rangeSlider.value;
+
+  localStorage.setItem("sliderValue", currentValue);
   //if the cursor is in the both randomly change the font-feature attribute
-  if (Math.random() > 0.8) {
+  if (Math.random() > 0.5) {
     const temp = document.querySelectorAll(".change");
     temp.forEach((element) => {
-      console.log(`${header.width()}`);
+      // console.log(`${header.width()}`);
       let ran = parseInt(Math.random() * states.length);
+      const changeblock = $(".block-title");
+      // console.log(changeblock);
+      changeblock.css("font-feature-settings", `"${states[ran]}"`);
       element.setAttribute("style", `font-feature-settings:"${states[ran]}"`);
       if (Math.random() > 0.8) {
         if (checkCase(element.innerHTML)) {
@@ -155,52 +157,38 @@ $(".popup-content").click(() => {
 function reloadThePage() {
   window.location.reload(true);
 }
-//changing the background function
-async function doWork(s) {
-  try {
-    const res = await s.getMyData();
-    Rows = s.collapseKeys("Images");
-    //add the last url to the background
-    temp = givemethatlink(Rows);
-    document.body.style.backgroundImage = `url("${temp}")`;
-    document.body.style.backgroundColor = "var(--main-color)";
-  } catch (err) {
-    console.log(err);
+window.addEventListener("load", function () {
+  // Retrieve the value from Local Storage
+  const localSliderValue = localStorage.getItem("sliderValue");
+  if (localSliderValue) {
+    rangeSlider.value = localSliderValue;
   }
-}
-//check to ignore empty cells
-function givemethatlink(r) {
-  for (let i = 0; i < r.length; i++) {
-    if (r[i + 1].Images == "" || r[i + 1].Images == undefined) {
-      return r[i].Images;
-    }
-  }
-}
-//if mobile change when scroll
-if (isMobile.any) {
-  $(document).on("scroll", function (e) {
-    e.preventDefault();
-    if (Math.random() > 0.8) {
-      const temp = document.querySelectorAll(".change");
-      temp.forEach((element) => {
-        // console.log(element);
-        console.log(`${header.width()}`);
-        let ran = parseInt(Math.random() * states.length);
-        element.setAttribute("style", `font-feature-settings:"${states[ran]}"`);
-        if (Math.random() > 0.8) {
-          if (checkCase(element.innerHTML)) {
-            element.innerHTML = element.innerHTML.toLowerCase();
-          } else {
-            element.innerHTML = element.innerHTML.toUpperCase();
-          }
-          // const divleft = $(".container-left");
-          // divleft.css("width", `${header.width() + 30}px `);
-        }
-      });
-    } else {
-    }
-  });
-}
+});
+// //if mobile change when scroll
+// if (isMobile.any) {
+//   $(document).on("scroll", function (e) {
+//     e.preventDefault();
+//     if (Math.random() > 0.8) {
+//       const temp = document.querySelectorAll(".change");
+//       temp.forEach((element) => {
+//         // console.log(element);
+//         // console.log(`${header.width()}`);
+//         let ran = parseInt(Math.random() * states.length);
+//         element.setAttribute("style", `font-feature-settings:"${states[ran]}"`);
+//         if (Math.random() > 0.8) {
+//           if (checkCase(element.innerHTML)) {
+//             element.innerHTML = element.innerHTML.toLowerCase();
+//           } else {
+//             element.innerHTML = element.innerHTML.toUpperCase();
+//           }
+//           // const divleft = $(".container-left");
+//           // divleft.css("width", `${header.width() + 30}px `);
+//         }
+//       });
+//     } else {
+//     }
+//   });
+// }
 //code I might use later:
 
 // $(".header").draggable();

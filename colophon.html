@@ -16,21 +16,27 @@
       integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/gh/alvinashiatey/Sheets@latest/dist/sheets.umd.min.js"></script>
-
     <script
       src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"
       integrity="sha256-Lsk+CDPOzTapLoAzWW0G/WeQeViS3FMzywpzPZV8SXk="
       crossorigin="anonymous"
     ></script>
     <script src="app.js" defer></script>
-    <title>100m</title>
+    <script src="https://cdn.jsdelivr.net/gh/alvinashiatey/Sheets@latest/dist/sheets.umd.min.js"></script>
+    <script src="archive.js" defer></script>
+    <title>100m — work</title>
   </head>
   <body>
-    <div class="main">
-      <div class="container-left">
+    <div class="popup">
+      <div src="" alt="" class="popup-content">
+        <span class="notice-container"></span>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="navbar-container">
         <div class="header">
           <p id="title" class="titleocad">
+            <!-- <sup>ocad</sup> -->
             <span class="change">1</span><span class="change">0</span
             ><span class="change">0</span><span class="change">m</span
             ><span class="change"> S</span><span class="change">t</span
@@ -38,28 +44,46 @@
             ><span class="change">i</span><span class="change">o</span>
           </p>
         </div>
-        <div class="pages">
-          <a href="index.html" class="pagelinks">Home</a>
-          <a href="work.html" class="pagelinks">Work</a>
-          <a href="about.html" class="pagelinks">About</a>
-          <a href="colophon.html" class="pagelinks active">Colophon</a>
+        <div class="slider-container">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="25"
+            class="slider"
+            id="myRange"
+          />
         </div>
-        <div class="pages second">
-          <a href="mailto:100mc.studio@gmail.com" class="contactlinks">email</a>
-          <a href="https://www.are.na/100m-studio" class="contactlinks"
-            >are.na</a
-          >
+        <div class="pagemain">
+          <div class="pages">
+            <a href="index.html" class="pagelinks">Home</a>
+            <a
+              href="index.html"
+              class="pagelinks"
+              style="color: rgb(215, 215, 215)"
+              >Work</a
+            >
+            <a href="projects.html" class="pagelinks">Projects</a>
+            <a href="about.html" class="pagelinks">About</a>
+            <a href="colophon.html" class="pagelinks active">Colophon</a>
+          </div>
+          <div class="pages second">
+            <a href="mailto:100mc.studio@gmail.com" class="contactlinks"
+              >email</a
+            >
+            <a href="https://www.are.na/100m-studio" class="contactlinks"
+              >are.na</a
+            >
+            <a
+              href="https://chat.whatsapp.com/KrUpP9RoIeDKYu3ks2NNa0"
+              class="contactlinks"
+              >join our whatsapp group</a
+            >
+          </div>
         </div>
-        <!-- <button type="button" onClick="reloadThePage()" id="refreshBTN">
-          <p id="inthere">↻</p>
-        </button> -->
-        <!-- <div class="pages third">
-          <a href="index.html" class="pagelinks change"
-            >Change the background</a
-          >
-        </div> -->
       </div>
-
+    </div>
+    <div class="main">
       <div class="container-right">
         <div class="header-right">
           <p class="block-title">WEBSITE:</p>
@@ -145,6 +169,5 @@
         <!-- <div class="news-right"></div> -->
       </div>
     </div>
-    <!-- <div class="change-back">Change background</div> -->
   </body>
 </html>

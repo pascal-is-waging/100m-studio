@@ -16,55 +16,77 @@
       integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/gh/alvinashiatey/Sheets@latest/dist/sheets.umd.min.js"></script>
-
     <script
       src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"
       integrity="sha256-Lsk+CDPOzTapLoAzWW0G/WeQeViS3FMzywpzPZV8SXk="
       crossorigin="anonymous"
     ></script>
     <script src="app.js" defer></script>
-    <title>100m</title>
+    <script src="https://cdn.jsdelivr.net/gh/alvinashiatey/Sheets@latest/dist/sheets.umd.min.js"></script>
+    <script src="archive.js" defer></script>
+    <title>100m — work</title>
   </head>
   <body>
-    <div class="main">
-      <div class="container-left">
+    <div class="popup">
+      <div src="" alt="" class="popup-content">
+        <span class="notice-container"></span>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="navbar-container">
         <div class="header">
           <p id="title" class="titleocad">
             <!-- <sup>ocad</sup> -->
             <span class="change">1</span><span class="change">0</span
-            ><span class="change">0</span><span class="change">m</span>
-            <span class="change">S</span><span class="change">t</span
+            ><span class="change">0</span><span class="change">m</span
+            ><span class="change"> S</span><span class="change">t</span
             ><span class="change">u</span><span class="change">d</span
             ><span class="change">i</span><span class="change">o</span>
           </p>
         </div>
-        <div class="pages">
-          <a href="index.html" class="pagelinks">Home</a>
-          <a href="work.html" class="pagelinks">Work</a>
-          <a href="about.html" class="pagelinks active">About</a>
-          <a href="colophon.html" class="pagelinks">Colophon</a>
+        <div class="slider-container">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="25"
+            class="slider"
+            id="myRange"
+          />
         </div>
-        <div class="pages second">
-          <a href="mailto:100mc.studio@gmail.com" class="contactlinks">email</a>
-          <a href="https://www.are.na/100m-studio" class="contactlinks"
-            >are.na</a
-          >
-          <!-- <a
-            href="https://docs.google.com/spreadsheets/d/1t5KQxRLhwsDz6YugontnYx1FkmKMXRsIm7Ty4Zba6UU/edit?usp=sharing"
-            id="change-ground"
-            class="contactlinks"
-            target="_blank"
-            >add your background</a
-          > -->
+        <div class="pagemain">
+          <div class="pages">
+            <a href="index.html" class="pagelinks">Home</a>
+            <a
+              href="index.html"
+              class="pagelinks"
+              style="color: rgb(215, 215, 215)"
+              >Work</a
+            >
+            <a href="projects.html" class="pagelinks">Projects</a>
+            <a href="about.html" class="pagelinks active">About</a>
+            <a href="colophon.html" class="pagelinks">Colophon</a>
+          </div>
+          <div class="pages second">
+            <a href="mailto:100mc.studio@gmail.com" class="contactlinks"
+              >email</a
+            >
+            <a href="https://www.are.na/100m-studio" class="contactlinks"
+              >are.na</a
+            >
+            <a
+              href="https://chat.whatsapp.com/KrUpP9RoIeDKYu3ks2NNa0"
+              class="contactlinks"
+              >join our whatsapp group</a
+            >
+          </div>
         </div>
-        <!-- <button type="button" onClick="reloadThePage()" id="refreshBTN">
-          <p id="inthere">↻</p>
-        </button> -->
       </div>
+    </div>
+    <div class="main">
       <div class="container-right">
         <div class="header-right">
-          <p class="guild-info">
+          <div class="block-title about">
             <span class="mtag">100m</span> is an in-house design studio at OCAD
             run by students, we aim to contribute to our community by providing
             design services to student groups, student union, faculty and
@@ -72,26 +94,9 @@
             opportunity to bring our practice to real life in projects we deeply
             care about —a communal practice— facilitating co-operation within
             our campus.
-          </p>
-          <!-- <a
-            class="guild-info link"
-            href="https://www.are.na/ocad-design-guild/things-that-inspired-the-guild"
-            target="_blank"
-            style=""
-            >Things that inspired the guild</a
-          > -->
+          </div>
+          <div class="header-right-alter-gallery"></div>
         </div>
-
-        <!-- <div class="header-right">
-          <br />
-          <p class="block-content"></p>
-          <a
-            class="guild-info about"
-            href="https://www.are.na/ocad-design-guild/things-that-inspired-the-guild"
-            >Things that inspired the guild</a
-          >
-        </div>
-        <div class="news-right"></div> -->
       </div>
     </div>
   </body>

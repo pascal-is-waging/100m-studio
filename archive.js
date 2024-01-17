@@ -22,15 +22,6 @@ async function main() {
 
   contents.forEach((item) => {
     if (item.class == "Image") {
-      /*
-       * Daddy is the main container
-       *
-       * daddy has --
-       *            |
-       *          A block _ inside
-       *                          | -> has an image inside
-       *
-       */
       let block = document.createElement("div");
       let b_css = "margin: 1%;";
       // width: 60%; height: 30%;
@@ -59,7 +50,7 @@ async function working() {
   //shuffle the contents
   contents = contents.sort(() => Math.random() - 0.5);
 
-  let daddy = document.querySelector(".header-right-alter");
+  let daddy = document.querySelector(".header-right-alter-gallery");
   let temp = document.createElement("div");
   temp.classList.add("working-img");
   // console.log(daddy);
@@ -84,5 +75,5 @@ async function working() {
   daddy.appendChild(temp);
 }
 
-main();
+// main();
 working();
