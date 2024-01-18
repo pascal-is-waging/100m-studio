@@ -112,18 +112,26 @@ not_container.mousemove(() => {
 const rangeSlider = document.getElementById("myRange");
 $("#myRange").on("input", function () {
   const currentValue = rangeSlider.value;
-
   localStorage.setItem("sliderValue", currentValue);
   //if the cursor is in the both randomly change the font-feature attribute
   if (Math.random() > 0.5) {
     const temp = document.querySelectorAll(".change");
+    let ranstate = [];
     temp.forEach((element) => {
       // console.log(`${header.width()}`);
       let ran = parseInt(Math.random() * states.length);
       const changeblock = $(".block-title");
       // console.log(changeblock);
-      changeblock.css("font-feature-settings", `"${states[ran]}"`);
-      element.setAttribute("style", `font-feature-settings:"${states[ran]}"`);
+      ranstate.push(`${states[ran]}`);
+      changeblock.css(
+        "font-feature-settings",
+        `"${ranstate[ranstate.length - 1]}"`
+      );
+      element.setAttribute(
+        "style",
+        `font-feature-settings:"${ranstate[ranstate.length - 1]}"`
+      );
+
       if (Math.random() > 0.8) {
         if (checkCase(element.innerHTML)) {
           element.innerHTML = element.innerHTML.toLowerCase();
@@ -132,6 +140,8 @@ $("#myRange").on("input", function () {
         }
       }
     });
+    ranstate = JSON.stringify(ranstate);
+    localStorage.setItem("header-state", ranstate);
   } else {
   }
 });
@@ -153,17 +163,33 @@ $(".block-img").click((e) => {
 $(".popup-content").click(() => {
   temppop.removeClass("active");
 });
-//function for reload btn
-function reloadThePage() {
-  window.location.reload(true);
-}
 window.addEventListener("load", function () {
   // Retrieve the value from Local Storage
   const localSliderValue = localStorage.getItem("sliderValue");
   if (localSliderValue) {
     rangeSlider.value = localSliderValue;
   }
+  let index = 0;
+  let myarray = localStorage.getItem("header-state");
+  myarray = JSON.parse(myarray);
+  const temp = document.querySelectorAll(".change");
+  console.log(myarray);
+  temp.forEach((element) => {
+    console.log("wje s");
+    const changeblock = $(".block-title");
+    changeblock.css("font-feature-settings", `"${myarray[index]}"`);
+    element.setAttribute("style", `font-feature-settings:"${myarray[index]}"`);
+    index++;
+  });
 });
+
+if (isMobile.any) {
+  // console.log("mobile");
+  // console.log(header.width());
+  const mainthing = $(".main");
+  const needed = $(".navbar-container");
+  mainthing.css("top", `${needed.outerHeight() + 30}px`);
+}
 // //if mobile change when scroll
 // if (isMobile.any) {
 //   $(document).on("scroll", function (e) {

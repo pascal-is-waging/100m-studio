@@ -269,6 +269,7 @@ body {
   font-size: 4rem;
   font-family: basker1;
   padding: 1rem;
+  font-variation-settings: "aalt";
 }
 .block-img {
   width: 60%;
@@ -417,7 +418,7 @@ body {
   color: var(--accent-color);
 }
 .change {
-  font-feature-settings: none;
+  font-feature-settings: "aalt";
   /* text-shadow: 2px -3px 6px rgba(0, 0, 255, 0.55),
     2px -30px 18px rgba(0, 0, 255, 0.26),
     1px -14px 17px rgba(255, 254, 252, 0.18); */
@@ -670,6 +671,7 @@ input {
   .navbar-container {
     gap: 3rem;
     margin: 0px;
+    height: max-content;
     /* width: 100%; */
   }
   .mtag {
