@@ -660,6 +660,7 @@ input {
   #title {
     font-size: 12rem;
     line-height: 0.95;
+    padding-top: 1rem;
   }
   .container-side {
     display: none;
