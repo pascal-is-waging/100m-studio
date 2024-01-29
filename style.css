@@ -238,6 +238,9 @@ body {
   border: 0.5px solid #000000;
   padding: 1rem 0.5rem 0.5rem 1rem;
 }
+.header-right.open {
+  border: 1.5px solid #000000;
+}
 .header-right-alter-gallery {
   width: 100%;
   height: 100%;
@@ -271,6 +274,11 @@ body {
   padding: 1rem;
   font-variation-settings: "aalt";
 }
+.block-title.open {
+  color: black;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
 .block-img {
   width: 60%;
   margin-top: 1rem;
@@ -278,6 +286,7 @@ body {
 }
 .block-img-side {
   width: 100%;
+  filter: grayscale(1);
 }
 .block-img-working {
   width: 100%;
@@ -295,6 +304,10 @@ body {
 }
 .block-content.top {
   font-size: 2.6rem;
+}
+.block-content.open {
+  color: rgb(89, 89, 89);
+  font-size: 2rem;
 }
 .block-content-left {
   width: 80%;
@@ -413,9 +426,13 @@ body {
   border-left: 0.5px solid black;
   border-bottom: 0.5px solid black;
   padding-left: 0.5rem;
+  padding-top: 0.2rem;
 }
 .pagelinks.active {
   color: var(--accent-color);
+}
+.pagelinks.in {
+  color: rgb(215, 215, 215);
 }
 .change {
   font-feature-settings: "aalt";
@@ -528,6 +545,17 @@ input {
   color: rgb(62, 62, 62);
 }
 
+.filter-btn {
+  background: black;
+  border: none;
+  color: white;
+  width: 80%;
+  font-family: "healB";
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 0 2rem 0 2rem;
+}
+
 /* Hover states
 -------------------------------------
  */
@@ -560,7 +588,7 @@ input {
   transform: translateX(5%) scale(1.1);
 }
 ::selection {
-  background: white;
+  background: var(--background-color);
   color: var(--accent-color);
 }
 .header:hover {
