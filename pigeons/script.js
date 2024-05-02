@@ -149,6 +149,7 @@ let slides = [
     title: "We've been working...",
     content: [
       "So the past year, we've been working in sort of these simple patterns:",
+      "What do we wanna do? ➠ Then help each other.",
       "➫ Have meetings whenever things come up",
       "➥ Pick up stuff that needs to be done",
       "➠ And everyone just sort of does it",
