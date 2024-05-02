@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Authentic";
+  src: url("fonts/sans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Century";
+  src: url("fonts/serif.woff2") format("woff2");
+}
+
+:root {
+  --bright: #feff5a;
+  --light: wheat;
+  --dark: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+  font-family: "Authentic", sans-serif;
+  color: var(--dark);
+  padding: 1px 2px;
+  margin: 0 3px;
+
+  cursor: crosshair;
+  transition: all 0.1s;
+}
+
+button:hover {
+  color: var(--bright);
+  background-color: var(--dark);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  width: 100vw;
+  height: 5vh;
+}
+
+.header > :last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.presentation-area {
+  display: grid;
+  padding: 10px;
+
+  grid-template-columns: 1fr 0.0125fr 1fr 0.0125fr 1fr 0.0125fr 1fr 0.0125fr 1fr 0.0125fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  background-color: var(--light);
+  height: 100vh;
+  width: 100vw;
+}
+
+.title {
+  font-family: "Century", serif;
+  font-size: 2.5rem;
+
+  grid-column-start: 2;
+  grid-column-end: 6;
+
+  grid-row-start: 3;
+
+  text-transform: uppercase;
+}
+
+.content {
+  font-family: sans-serif;
+
+  grid-column-start: 3;
+  grid-row-start: 2;
+  grid-column-end: 8;
+}
