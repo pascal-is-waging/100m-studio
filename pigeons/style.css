@@ -18,7 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: none;
+  cursor: crosshair;
 }
 
 button {
@@ -95,12 +95,24 @@ button:hover {
   font-weight: 100;
 }
 
+a {
+  all: unset;
+  color: var(--dark);
+  border-bottom: 1px solid var(--dark);
+}
+
+a:hover {
+  color: var(--bright);
+}
+
 .image-box {
   position: fixed;
   top: 0;
   left: 0;
   mix-blend-mode: multiply;
   box-shadow: 0 0 50px 5px rgba(0, 0, 255, 0.05);
+
+  /* z-index: -1; */
 }
 
 .image-box img {

@@ -1,4 +1,5 @@
 let main = document.querySelector(".slides-container");
+let show_image = false;
 
 // ----
 // PRESENTER / CONTROLLER
@@ -40,7 +41,6 @@ let presenter = (function() {
     },
     update: function() {
       deps.forEach((dep) => dep(memory));
-      console.log(memory.blend);
       let b = memory.blend % 2 === 0 ? "multiply" : "difference";
       let image_box = document.querySelector(".image-box");
       image_box ? (image_box.style.mixBlendMode = b) : null;
@@ -77,6 +77,18 @@ let presenter = (function() {
       } else if (event.key === "ArrowUp" || event.key === "ArrowDown") {
         memory.blend += 1;
         this.update();
+      } else if (event.key === "x") {
+        console.log("x");
+        let box = document.querySelector(".image-box");
+        if (box) {
+          if (box.style.display != "none") {
+            box.style.display = "none";
+            show_image = false;
+          } else {
+            box.style.display = "block";
+            show_image = true;
+          }
+        }
       }
     },
   };
@@ -87,15 +99,17 @@ document.addEventListener("mousemove", (e) => mouse_update(e));
 
 function mouse_update(e) {
   let image_box = document.querySelector(".image-box");
+  if (image_box == null) return;
   let box_width = image_box.getBoundingClientRect().width;
   let box_height = image_box.getBoundingClientRect().height;
 
   let half_width = box_width / 2;
   let half_height = box_height / 2;
 
-  image_box.style.transform = `rotateX(${(e.clientY - half_height) / 10
-    }deg) rotateY(${(e.clientX - half_width) / 30}deg)
-    translate(${e.clientX - half_width}px , ${e.clientY - half_height}px)
+  image_box.style.transform = `
+  rotateX(${(e.clientY - half_height) / 20}deg)
+  rotateY(${(e.clientX - half_width) / 30}deg)
+  translate(${e.clientX - half_width}px , ${e.clientY - half_height}px)
   `;
 }
 
@@ -126,10 +140,15 @@ let slides = [
     header: "Introduction",
     title: "Introduction",
     content: [
-      `Hey everyone, so this will be a short presentation -- I will just quickly give you a brief rundown of how we have been organising ourselves over the past year, what's next, a brief overview of the conversations we had about how we want 100m to grow, and how we can sustain it. And finally I'll just introduce some of the projects we have lined up for the future.`,
+      `Hey everyone, so this will be a short presentation -- I will just quickly give you a brief rundown of: `,
+      `How we have been organising ourselves over the past year, what's next`,
+      `A brief overview of the conversations we had about how we want 100m to grow`,
+      `And how we can sustain it.`,
+      `And finally I'll just introduce some of the projects we have lined up for the future.`,
     ],
     images: [
       "https://d2w9rnfcy7mm78.cloudfront.net/3834101/original_f2b333ca1d245921d35a036c3f48b62a.jpg",
+      // "https://d2w9rnfcy7mm78.cloudfront.net/2665130/original_659a47c65416ac88a3ac3db9ebb1ca41.gif?1536284537?bc=1",
     ],
   },
 
@@ -160,10 +179,34 @@ let slides = [
 
   {
     header: "How we will be organized",
+    title: "Need for coorinators",
+    content: [],
+    images: ["./images/coordinators.png"],
+  },
+
+  {
+    header: "How we will be organized",
+    title: "School of Studios",
+    content: [
+      "Umbrella 100m sort of thing",
+      () => link("School of Studios PDF", "https://www.are.na/block/24278558"),
+    ],
+    images: ["./images/school.png"],
   },
 
   {
     header: "Upcoming Projects",
+    title: "Upcoming Projects",
+
+    content: [
+      "Things we are working on right now, and plan to:",
+      "➫ Student Press (Digital)",
+      "➽ 100m Website Redesign",
+      "➥ Screenings",
+      "➫ Reading groupd",
+      "☛ Deconstruct OCAD",
+      "▹ Student Archive",
+    ],
   },
 ];
 
@@ -171,18 +214,25 @@ let slideElements = slides.map((slide) => {
   return slide_element(slide.header, slide.title, slide.content, slide.images);
 });
 
+function link(text, url) {
+  let elem = document.createElement("a");
+  elem.href = url;
+  elem.innerText = text;
+  return elem;
+}
+
 // How a slide is created
 function slide_element(header, title_text, content_list, images) {
   let slide = document.createElement("div");
   let presentation_area = document.createElement("div");
   presentation_area.classList.add("presentation-area");
 
-  if (title_text) {
-    presentation_area.appendChild(title(title_text));
-  }
-
   if (images) {
     presentation_area.appendChild(image_box(images));
+  }
+
+  if (title_text) {
+    presentation_area.appendChild(title(title_text));
   }
 
   content_list ? presentation_area.appendChild(content(content_list)) : null;
@@ -230,6 +280,10 @@ function image_box(images) {
   let container = document.createElement("div");
   container.classList.add("image-box");
 
+  container.onclick = () => {
+    container.style.display = "none";
+  };
+
   images.forEach((image) => {
     let img = document.createElement("img");
     img.src = image;
@@ -245,9 +299,6 @@ function top_bar(header_text) {
 
   let header = document.createElement("span");
   header.innerText = header_text + " ";
-
-  let title = document.createElement("h1");
-  header.innerText = header_text;
 
   elem.appendChild(header);
   elem.appendChild(page_numbers());
@@ -289,5 +340,7 @@ function page_buttons() {
 
   return buttons;
 }
+
+// console.log("press x to hide image");
 
 presenter.update();
