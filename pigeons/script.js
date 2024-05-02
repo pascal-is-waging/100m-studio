@@ -30,6 +30,7 @@ let main = document.querySelector(".slides-container");
 let presenter = (function() {
   let memory = {
     count: 0,
+    blend: 0,
   };
 
   let deps = [];
@@ -39,6 +40,10 @@ let presenter = (function() {
     },
     update: function() {
       deps.forEach((dep) => dep(memory));
+      console.log(memory.blend);
+      let b = memory.blend % 2 === 0 ? "multiply" : "difference";
+      let image_box = document.querySelector(".image-box");
+      image_box ? (image_box.style.mixBlendMode = b) : null;
       this.render();
     },
     value: function() {
@@ -69,12 +74,30 @@ let presenter = (function() {
         this.next();
       } else if (event.key === "ArrowLeft") {
         this.previous();
+      } else if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+        memory.blend += 1;
+        this.update();
       }
     },
   };
 })();
 
 document.addEventListener("keydown", (event) => presenter.keymanager(event));
+document.addEventListener("mousemove", (e) => mouse_update(e));
+
+function mouse_update(e) {
+  let image_box = document.querySelector(".image-box");
+  let box_width = image_box.getBoundingClientRect().width;
+  let box_height = image_box.getBoundingClientRect().height;
+
+  let half_width = box_width / 2;
+  let half_height = box_height / 2;
+
+  image_box.style.transform = `rotateX(${(e.clientY - half_height) / 10
+    }deg) rotateY(${(e.clientX - half_width) / 30}deg)
+    translate(${e.clientX - half_width}px , ${e.clientY - half_height}px)
+  `;
+}
 
 // ----
 // CONTENT / DATASET
@@ -94,25 +117,44 @@ document.addEventListener("keydown", (event) => presenter.keymanager(event));
 // --------------------------------------------
 let slides = [
   {
-    header: "Title Page",
+    header: "100m",
     title: "100m Overview/Rundown",
+    images: ["./images/100m_logo.png"],
   },
 
   {
     header: "Introduction",
     title: "Introduction",
     content: [
-      "We're going to do some talking about how we organise, etc. Another sentence and stuff and whatever you know?",
+      `Hey everyone, so this will be a short presentation -- I will just quickly give you a brief rundown of how we have been organising ourselves over the past year, what's next, a brief overview of the conversations we had about how we want 100m to grow, and how we can sustain it. And finally I'll just introduce some of the projects we have lined up for the future.`,
     ],
-    images: [],
+    images: [
+      "https://d2w9rnfcy7mm78.cloudfront.net/3834101/original_f2b333ca1d245921d35a036c3f48b62a.jpg",
+    ],
   },
 
   {
     header: "Table of Contents",
+    title: "Table of Contents",
+    content: [
+      "To quickly give you an overview of what I will be talking about:",
+      "☞ How we have been organized",
+      "➫ How we are planning on being organized in the future",
+      "➥ What's next, upcoming projects and stuff ",
+    ],
   },
 
   {
     header: "How we have been organized",
+    title: "We've been working...",
+    content: [
+      "So the past year, we've been working in sort of these simple patterns:",
+      "➫ Have meetings whenever things come up",
+      "➥ Pick up stuff that needs to be done",
+      "➠ And everyone just sort of does it",
+      () => strike_through("✕ Works like a charm..."),
+    ],
+    images: ["./images/cur_working.png"],
   },
 
   {
@@ -138,6 +180,10 @@ function slide_element(header, title_text, content_list, images) {
     presentation_area.appendChild(title(title_text));
   }
 
+  if (images) {
+    presentation_area.appendChild(image_box(images));
+  }
+
   content_list ? presentation_area.appendChild(content(content_list)) : null;
 
   slide.appendChild(top_bar(header));
@@ -155,10 +201,11 @@ function title(title_text) {
 
 function content(list) {
   let container = document.createElement("span");
+  container.classList.add("content");
   list.forEach((item) => {
-    container.classList.add("content");
-
-    container.appendChild(p(item));
+    if (typeof item === "string") container.appendChild(p(item));
+    if (typeof item === "function") container.appendChild(item());
+    else if (item instanceof HTMLElement) container.appendChild(item);
   });
 
   return container;
@@ -168,6 +215,27 @@ function p(text) {
   let elem = document.createElement("p");
   elem.innerText = text;
   return elem;
+}
+
+function strike_through(text) {
+  let elem = document.createElement("span");
+  elem.style.textDecoration = "line-through";
+  elem.innerText = text;
+
+  return elem;
+}
+
+function image_box(images) {
+  let container = document.createElement("div");
+  container.classList.add("image-box");
+
+  images.forEach((image) => {
+    let img = document.createElement("img");
+    img.src = image;
+    container.appendChild(img);
+  });
+
+  return container;
 }
 
 function top_bar(header_text) {
