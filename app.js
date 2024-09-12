@@ -209,7 +209,7 @@ async function dirctoryload(s) {
 function generateStudio(r) {
   const div = document.querySelector(".container-right-dir");
   for (x of r) {
-    if (`${x["contact"]}` != "") {
+    if (`${x["Studio name"]}` != "") {
       const temp = document.createElement("div");
       temp.classList.add("header-right-dir");
       const title = document.createElement("div");
@@ -221,8 +221,8 @@ function generateStudio(r) {
       temp.appendChild(title);
       temp.appendChild(contact);
       div.appendChild(temp);
-      console.log(x);
     }
+    console.log(x);
   }
 }
 // //if mobile change when scroll
