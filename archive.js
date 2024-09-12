@@ -6,6 +6,7 @@
 
 let slug = "work-kegrsmfb7le";
 let slug2 = "we-re-working";
+let slug3 = "100m-feed";
 
 async function main() {
   let channel = await fetch(

@@ -1,5 +1,6 @@
 // isMobile by kaimallea https://github.com/kaimallea/isMobile
 // Minified version of isMobile included in the HTML since it's small
+
 (function () {
   var a = {};
   var f = /iPhone/i,
@@ -80,6 +81,7 @@
     this["isMobile"] = a;
   }
 })();
+const sheet = new Sheets("1-7IxAa5T8SfntggC4yUCDKyGSxL81q3OEWvo6Pftm_k");
 let states = ["ss01", "aalt", "ss02", "ss03", "ss04", "none"];
 const header = $(".header");
 const temppop = $(".popup");
@@ -106,14 +108,11 @@ not_container.mousemove(() => {
   } else {
   }
 });
+dirctoryload(sheet);
 // changing typeface animation for the 100m studio
 
 // change the css tag randomly based on the states array:
-const rangeSlider = document.getElementById("myRange");
-$("#myRange").on("input", function () {
-  const currentValue = rangeSlider.value;
-  localStorage.setItem("sliderValue", currentValue);
-  //if the cursor is in the both randomly change the font-feature attribute
+function changeCase() {
   if (Math.random() > 0.5) {
     const temp = document.querySelectorAll(".change");
     let ranstate = [];
@@ -144,6 +143,13 @@ $("#myRange").on("input", function () {
     localStorage.setItem("header-state", ranstate);
   } else {
   }
+}
+const rangeSlider = document.getElementById("myRange");
+$("#myRange").on("input", function () {
+  const currentValue = rangeSlider.value;
+  changeCase();
+  localStorage.setItem("sliderValue", currentValue);
+  //if the cursor is in the both randomly change the font-feature attribute
 });
 // check if the letter is uppercase or not
 function checkCase(letter) {
@@ -189,6 +195,35 @@ if (isMobile.any) {
   const mainthing = $(".main");
   const needed = $(".navbar-container");
   mainthing.css("top", `${needed.outerHeight() + 30}px`);
+}
+async function dirctoryload(s) {
+  try {
+    const res = await s.getMyData();
+    Rows = s.collapseKeys("Studio name", "contact", "notes (if needed)");
+    generateStudio(Rows);
+    // domorework();
+  } catch (err) {
+    console.log(err);
+  }
+}
+function generateStudio(r) {
+  const div = document.querySelector(".container-right-dir");
+  for (x of r) {
+    if (`${x["contact"]}` != "") {
+      const temp = document.createElement("div");
+      temp.classList.add("header-right-dir");
+      const title = document.createElement("div");
+      const contact = document.createElement("div");
+      title.classList.add("block-title-dir");
+      contact.classList.add("block-content-dir");
+      title.innerHTML = `${x["Studio name"]}`;
+      contact.innerHTML = `${x["contact"]}`;
+      temp.appendChild(title);
+      temp.appendChild(contact);
+      div.appendChild(temp);
+      console.log(x);
+    }
+  }
 }
 // //if mobile change when scroll
 // if (isMobile.any) {

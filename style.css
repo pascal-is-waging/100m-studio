@@ -113,6 +113,8 @@ body {
   /* color: var(--accent-color); */
   /* text-shadow: none; */
 }
+.studio-names {
+}
 .change-back {
   position: fixed;
   left: 5vw;
@@ -159,6 +161,15 @@ body {
   align-items: flex-start;
   gap: 1rem;
   flex: 3;
+}
+.container-right-dir {
+  display: grid;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 1rem;
+  /* flex: 3; */
+  width: 65vw;
+  grid-template-columns: 33% 33% 33%;
 }
 .container-right.work {
   width: 70vw;
@@ -232,6 +243,14 @@ body {
   padding: 1rem 0.5rem 0.5rem 1rem;
   margin-bottom: 1rem;
 }
+.header-right-dir {
+  width: 100%;
+  /* border: 0.5px solid #000000; */
+  background-color: blue;
+  box-shadow: 5px 5px 100px 20px rgb(255 255 255);
+  padding: 1rem 0.5rem 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
 .header-right-alter {
   width: 100%;
   height: 100%;
@@ -261,6 +280,13 @@ body {
   font-feature-settings: none;
   font-size: 3rem;
   color: var(--accent-color);
+  margin: 1rem 2rem 2rem 0;
+}
+.block-title-dir {
+  font-family: healB;
+  font-size: 3rem;
+  font-feature-settings: none;
+  color: white;
   margin: 1rem 2rem 2rem 0;
 }
 .block-title.alter {
@@ -295,6 +321,13 @@ body {
 .block-content {
   font-family: basker1;
   color: black;
+  font-size: 2.5rem;
+  /* margin-right: 2rem; */
+  margin: 0.8rem 2rem 0.5rem 0rem;
+}
+.block-content-dir {
+  font-family: basker1;
+  color: #ffffffa1;
   font-size: 2.5rem;
   /* margin-right: 2rem; */
   margin: 0.8rem 2rem 0.5rem 0rem;
@@ -373,7 +406,7 @@ body {
   /* text-align: center; */
   font-family: healB;
   color: var(--accent-color);
-  font-size: 20rem;
+  font-size: 18rem;
   margin: 0;
 }
 .pagemain {
