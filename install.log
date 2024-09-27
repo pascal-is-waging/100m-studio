@@ -1,0 +1,9 @@
+[22:05:37 2024-09-24] FETCHING Version 2.38.3
+[22:05:37 2024-09-24] CREATING /Users/amirnevis/.spicetify
+[22:05:37 2024-09-24] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.38.3/spicetify-2.38.3-darwin-arm64.tar.gz
+[22:05:38 2024-09-24] EXTRACTING /Users/amirnevis/.spicetify/spicetify.tar.gz
+[22:05:38 2024-09-24] SETTING EXECUTABLE PERMISSIONS TO /Users/amirnevis/.spicetify/spicetify
+[22:05:38 2024-09-24] REMOVING /Users/amirnevis/.spicetify/spicetify.tar.gz
+[22:05:38 2024-09-24] spicetify path already set in /Users/amirnevis/.zshrc, continuing...
+[22:05:38 2024-09-24] spicetify v2.38.3 was installed successfully to /Users/amirnevis/.spicetify
+[22:05:38 2024-09-24] Run 'spicetify --help' to get started
