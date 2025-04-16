@@ -700,7 +700,7 @@ input {
     padding: 1rem;
   }
   #title {
-    font-size: 12rem;
+    font-size: 10rem;
     line-height: 0.95;
     padding-top: 1rem;
   }
@@ -744,7 +744,7 @@ input {
     gap: 3rem;
     margin: 0px;
     height: max-content;
-    /* width: 100%; */
+    width: 100vw;
   }
   .mtag {
     font-size: 3rem;
@@ -802,5 +802,13 @@ input {
   }
   .pages {
     width: 100%;
+  }
+  .container-right-dir {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 90vw;
+  }
+  .header-right-dir {
   }
 }
