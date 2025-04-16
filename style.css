@@ -24,8 +24,12 @@
 :root {
   --main-color: rgba(28, 28, 28, 0.4);
   --right-color: #fffffff9;
-  --background-color: #ffffffa7;
-  --accent-color: rgb(15 0 255);
+  /* --background-color: #ffffffa7;
+   */
+  /* --accent-color: rgb(15 0 255); */
+  --accent-color: #8416ff;
+  --background-color: #eeeeeea7;
+  --de-back: #f7f7f7a7;
 }
 * {
   box-sizing: border-box;
@@ -37,6 +41,9 @@ body {
   width: 100vw;
   margin: 0px;
   background-color: var(--background-color);
+  background-image: linear-gradient(to right, #2222 1px, transparent 1px),
+    linear-gradient(to bottom, #2222 1px, transparent 1px);
+  background-size: 100px 100px;
 }
 .popup {
   display: none;
@@ -229,7 +236,9 @@ body {
   height: max-content;
   margin-left: 1rem;
   /* border: 1px solid var(--accent-color); */
-  background-color: white;
+  /* background-color: white; */
+  background-color: var(--de-back);
+
   box-shadow: 5px 5px 100px 20px rgba(255, 255, 255, 0.5);
   /* padding: 1rem; */
   /* margin: 1rem; */
@@ -298,7 +307,7 @@ body {
   font-size: 4rem;
   font-family: basker1;
   padding: 1rem;
-  font-variation-settings: "aalt";
+  font-variation-settings: "ss01";
 }
 .block-title.open {
   color: black;
@@ -422,7 +431,7 @@ body {
   width: 30vw;
   height: max-content;
   /* border: 1px solid var(--accent-color); */
-  background-color: white;
+  background-color: var(--de-back);
   box-shadow: 5px 5px 100px 20px rgba(255, 255, 255, 0.5);
   padding: 1rem;
   display: grid;
@@ -729,6 +738,7 @@ input {
   }
   .slider {
     width: 90vw;
+    background-color: white;
   }
   .navbar-container {
     gap: 3rem;
