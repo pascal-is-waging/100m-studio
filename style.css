@@ -142,6 +142,27 @@ body {
 .main.updating {
   /* filter: blur(5px); */
 }
+.main.grant {
+  left: 0;
+  margin: 1rem 30vw;
+}
+.main2 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 1rem;
+  left: 30vw;
+  top: 15vh;
+}
+.main.updating {
+  /* filter: blur(5px); */
+}
+.main2.grant {
+  left: 0;
+  margin: 1rem 30vw;
+}
 .navbar-container {
   /* width: max-content; */
   display: flex;
@@ -308,6 +329,13 @@ body {
   font-family: basker1;
   padding: 1rem;
   font-variation-settings: "ss01";
+}
+.block-title.grant {
+  font-size: 2.5rem;
+  font-family: basker1;
+  padding: 1rem;
+  font-variation-settings: "ss01";
+  color: rgba(28, 28, 28, 0.7);
 }
 .block-title.open {
   color: black;
@@ -699,6 +727,13 @@ input {
     margin: 0px;
     padding: 1rem;
   }
+  .block-title.grant {
+    font-size: 1.8rem;
+    font-family: basker1;
+    padding: 1rem;
+    font-variation-settings: "ss01";
+    color: rgba(28, 28, 28, 0.7);
+  }
   #title {
     font-size: 10rem;
     line-height: 0.95;
@@ -736,6 +771,39 @@ input {
     align-content: center;
     justify-content: center;
   }
+  main.grant {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 1rem 15vw;
+    /* transform: translate(-50%, 0); */
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .main2 {
+    flex-direction: column;
+    position: absolute;
+    left: 4vw;
+    top: 56%;
+    margin: 0px;
+    /* transform: translate(-50%, 0); */
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .main2.grant {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 1rem;
+    /* transform: translate(-50%, 0); */
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
   .slider {
     width: 90vw;
     background-color: white;
@@ -748,6 +816,9 @@ input {
   }
   .mtag {
     font-size: 3rem;
+  }
+  .mtag2 {
+    font-size: 2rem;
   }
   .container-right {
     width: 92vw;
