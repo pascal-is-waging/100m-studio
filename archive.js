@@ -57,6 +57,7 @@ async function working() {
   // console.log(daddy);
   contents.forEach((item) => {
     if (item.class == "Image") {
+			console.log(item)
       /*
        * Daddy is the main container
        *
