@@ -62,7 +62,10 @@ function hydrate(){
 	channels.forEach((channel) => {
 		if (!channel.contents) return
 		let html = `<div class="channel-container">`
-		html += `<a href="https://are.na/channels/${channel.slug}"><div><h2 class="block-title">${channel.date.toDateString()}</h2></div></a>`
+		html += `
+<a target="_blank" href="https://are.na/channels/${channel.slug}">
+		<div><h2 class="block-title">${channel.date.toDateString()}</h2></div>
+</a>`
 
 		let links = channel.contents.filter(b => b.class == "Link")
 		let images = channel.contents.filter(b => b.class == "Image")
@@ -70,11 +73,11 @@ function hydrate(){
 
 		if (links.length > 0 || b_channels.length > 0) html+=`<p class="comment">Links</p>`
 		b_channels.forEach((block) => {
-			html+=`<p class="link"><span class="arena">Are.na</span><a class=" channel" href="https://are.na/channels/${block.slug}">${block.title}</a><p>`
+			html+=`<p class="link"><a target="_blank" href="https://are.na/channels/${block.slug}"><span class="arena">Are.na</span><span class="channel">${block.title}</span></a><p>`
 		})
 
 		links.forEach((block) => {
-			html+=`<p class="link"><a  href="${block.source.url}">${block.title}</a><p>`
+			html+=`<p class="link"><a  target="_blank" href="${block.source.url}">${block.title}</a><p>`
 		})
 
 
@@ -88,7 +91,10 @@ function hydrate(){
 		channel.contents.sort((c) => Math.random() > .5 ? 1 : -1)
 
 		images.slice(0,10).forEach((block) => {
-				html+=`<img class="block-img-working" src="${block.image.display.url}"></img>`
+			html+=`
+<a target="_blank" href="https://are.na/block/${block.id}">
+	<img class="block-img-working" src="${block.image.display.url}"></img>
+</a>`
 		})
 
 		if (images.length == 0) html+=`<p class="comment">no images from this open studio :(</p>`
