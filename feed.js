@@ -44,8 +44,7 @@ async function getchannel(slug) {
 
 function hydrate(){
 	clearTimeout(timeout)
-	let root = document.querySelector( ".header-right-alter-gallery")
-	root.innerHTML = ``
+	let root = document.querySelector( ".container-right")
 	// give channels date
 	channels.forEach((c) => {
 		let title  = c.title
@@ -61,7 +60,7 @@ function hydrate(){
 
 	channels.forEach((channel) => {
 		if (!channel.contents) return
-		let html = `<div class="channel-container">`
+		let html = `<div class="header-right">`
 		html += `
 <a target="_blank" href="https://are.na/channels/${channel.slug}">
 		<div><h2 class="block-title">${channel.date.toDateString()}</h2></div>
